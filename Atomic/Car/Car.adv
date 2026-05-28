@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<models:AdviseAtomicModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/atomic/advise/" name="Car">
+  <aeg adviseModel="/">
+    <stepElements key="Do Nothing">
+      <value name="Do Nothing" codename="DoNothing" editMask="15" attackExecutionGraph="//@aeg" height="0" width="0" cost="return 0;">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Deterministic">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+  </aeg>
+</models:AdviseAtomicModel>

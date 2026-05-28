@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<models:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/projects" name="ADVISE_Car_Attack" author="student" creationDate="2026-05-28T09:25:03.124+0200" lastSavedVersion="2.5.10.201907151645">
+  <atomic key="Car">
+    <value name="Car" type="ADVISE Model"/>
+  </atomic>
+</models:Project>
