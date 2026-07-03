@@ -17,30 +17,29 @@
 #include "Cpp/BaseClasses/atomic/advise/StepWeight.h"
 #include <limits.h>
 #include <cmath>
-extern Bool hasProximityNetworkAccess;
-extern Bool hasRemoteNetworkAccess;
-extern Bool hasMessageFormatKnowledge;
-extern Bool hasCarModelKnowledge;
-extern Bool hasV2XProtocolKnowledge;
-extern Short spoofingSkillLevel;
-extern Short chipFlashingSkillLevel;
-extern Short injectionSkillLevel;
-extern Short v2XPacketCraftingSkillLevel;
-extern Short dataExtractionSkillLevel;
+extern Short maliciousV2XMessagesCost;
+extern Short maliciousV2XMessagesTime;
 extern Short v2XPacketCraftingSkillThreshold;
-extern Short injectionSkillThreshold;
-extern Short chipFlashingSkillThreshold;
-extern Short remoteDataExtractionThreshold;
+extern Short v2XPacketCraftingSkillLevel;
+extern Short maliciousCANMessagesCost;
+extern Short maliciousCANMessagesTime;
+extern Bool hasProximityAccess;
+extern Bool hasRemoteNetworkAccess;
+extern Bool hasV2XProtocolKnowledge;
+extern Bool hasCarModelKnowledge;
+extern Bool hasMessageFormatKnowledge;
+extern Short spoofingSkillLevel;
+extern Short injectionSkillLevel;
+extern Short chipFlashingSkillLevel;
+extern Short dataExtractionSkillLevel;
 extern Short CANSpoofingSkillThreshold;
 extern Short OEMSpoofingSkillThreshold;
-extern Short maliciousV2XCost;
-extern Short maliciousCANCost;
-extern Short remoteExtractionCost;
-extern Short reflashChipCost;
-extern Short OEMImpersonationCost;
-extern Short binaryInjectionCost;
+extern Short CANExtractionSkillThreshold;
+extern Short remoteExtractionSkillThreshold;
+extern Short injectionSkillThreshold;
+extern Short chipFlashingSkillThreshold;
 extern Short CANExtractionCost;
-extern Short CANDataExtractionSkillThreshold;
+extern Short CANExtractionTime;
 extern UserDistributions* TheDistribution;
 
 /*********************************************************************
@@ -247,12 +246,12 @@ public:
 
   Access *CompromisedGatewayAccess;
   short* CompromisedGatewayAccess_Mobius_Mark;
+  Access *InternalRemoteAccess;
+  short* InternalRemoteAccess_Mobius_Mark;
   Knowledge *CarModelKnowledge;
   short* CarModelKnowledge_Mobius_Mark;
   Skill *ChipFlashingSkill;
   short* ChipFlashingSkill_Mobius_Mark;
-  Access *InternalRemoteAccess;
-  short* InternalRemoteAccess_Mobius_Mark;
   StepChosen *ReflashGatewayChipChosen;
   short *ReflashGatewayChipChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -298,12 +297,12 @@ public:
 
   Access *CompromisedGatewayAccess;
   short* CompromisedGatewayAccess_Mobius_Mark;
+  Access *InternalRemoteAccess;
+  short* InternalRemoteAccess_Mobius_Mark;
   Knowledge *CarModelKnowledge;
   short* CarModelKnowledge_Mobius_Mark;
   Skill *ChipFlashingSkill;
   short* ChipFlashingSkill_Mobius_Mark;
-  Access *InternalRemoteAccess;
-  short* InternalRemoteAccess_Mobius_Mark;
   StepChosen *ReflashGatewayChipChosen;
   short *ReflashGatewayChipChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -387,55 +386,6 @@ public:
   void executeEffects();
 }; // DoNothingNothingStep
 
-class ExtractDataViaCANBusSuccessStep : public Step {
-public:
-
-  Goal *StealPrivateData;
-  short* StealPrivateData_Mobius_Mark;
-  Access *InternalCANAccess;
-  short* InternalCANAccess_Mobius_Mark;
-  Skill *DataExtractionSkill;
-  short* DataExtractionSkill_Mobius_Mark;
-  StepChosen *ExtractDataViaCANBusChosen;
-  short *ExtractDataViaCANBusChosen_Mobius_Mark;
-  StepWeight *ReflashGatewayChipWeight;
-  short *ReflashGatewayChipWeight_Mobius_Mark;
-  StepWeight *DoNothingWeight;
-  short *DoNothingWeight_Mobius_Mark;
-  StepWeight *ExtractDataViaCANBusWeight;
-  short *ExtractDataViaCANBusWeight_Mobius_Mark;
-  StepWeight *SendV2XMaliciousMessagesWeight;
-  short *SendV2XMaliciousMessagesWeight_Mobius_Mark;
-  StepWeight *InjectTamperedBinaryWeight;
-  short *InjectTamperedBinaryWeight_Mobius_Mark;
-  StepWeight *InjectMaliciousCANMessagesWeight;
-  short *InjectMaliciousCANMessagesWeight_Mobius_Mark;
-  StepWeight *ExtractDataRemotelyWeight;
-  short *ExtractDataRemotelyWeight_Mobius_Mark;
-  StepWeight *ImpersonateOEMWeight;
-  short *ImpersonateOEMWeight_Mobius_Mark;
-  BeginAdversaryDecision *MakeDecision;
-  short *MakeDecision_Mobius_Mark;
-  double *TheDistributionParameters;
-
-  ExtractDataViaCANBusSuccessStep();
-  ~ExtractDataViaCANBusSuccessStep();
-  bool Enabled();
-  void LinkVariables();
-  double Weight();
-  bool ReactivationPredicate();
-  bool ReactivationFunction();
-  double SampleDistribution();
-  double* ReturnDistributionParameters();
-  double getCost();
-  double getOutcomeProbability();
-  double getDetection();
-  int Rank();
-  double timeDistributionParameter0();
-  bool preconditionsMet();
-  void executeEffects();
-}; // ExtractDataViaCANBusSuccessStep
-
 class ExtractDataViaCANBusFailureStep : public Step {
 public:
 
@@ -485,19 +435,17 @@ public:
   void executeEffects();
 }; // ExtractDataViaCANBusFailureStep
 
-class SendV2XMaliciousMessagesSuccessStep : public Step {
+class ExtractDataViaCANBusSuccessStep : public Step {
 public:
 
-  Access *CompromisedGatewayAccess;
-  short* CompromisedGatewayAccess_Mobius_Mark;
-  Skill *V2XPacketCraftingSkill;
-  short* V2XPacketCraftingSkill_Mobius_Mark;
-  Access *ProximityNetworkAccess;
-  short* ProximityNetworkAccess_Mobius_Mark;
-  Knowledge *V2XProtocolKnowledge;
-  short* V2XProtocolKnowledge_Mobius_Mark;
-  StepChosen *SendV2XMaliciousMessagesChosen;
-  short *SendV2XMaliciousMessagesChosen_Mobius_Mark;
+  Goal *StealPrivateData;
+  short* StealPrivateData_Mobius_Mark;
+  Access *InternalCANAccess;
+  short* InternalCANAccess_Mobius_Mark;
+  Skill *DataExtractionSkill;
+  short* DataExtractionSkill_Mobius_Mark;
+  StepChosen *ExtractDataViaCANBusChosen;
+  short *ExtractDataViaCANBusChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
   short *ReflashGatewayChipWeight_Mobius_Mark;
   StepWeight *DoNothingWeight;
@@ -518,8 +466,8 @@ public:
   short *MakeDecision_Mobius_Mark;
   double *TheDistributionParameters;
 
-  SendV2XMaliciousMessagesSuccessStep();
-  ~SendV2XMaliciousMessagesSuccessStep();
+  ExtractDataViaCANBusSuccessStep();
+  ~ExtractDataViaCANBusSuccessStep();
   bool Enabled();
   void LinkVariables();
   double Weight();
@@ -534,7 +482,7 @@ public:
   double timeDistributionParameter0();
   bool preconditionsMet();
   void executeEffects();
-}; // SendV2XMaliciousMessagesSuccessStep
+}; // ExtractDataViaCANBusSuccessStep
 
 class SendV2XMaliciousMessagesFailureStep : public Step {
 public:
@@ -545,8 +493,8 @@ public:
   short* V2XPacketCraftingSkill_Mobius_Mark;
   Access *ProximityNetworkAccess;
   short* ProximityNetworkAccess_Mobius_Mark;
-  Knowledge *V2XProtocolKnowledge;
-  short* V2XProtocolKnowledge_Mobius_Mark;
+  Knowledge *V2xProtocolKnowledge;
+  short* V2xProtocolKnowledge_Mobius_Mark;
   StepChosen *SendV2XMaliciousMessagesChosen;
   short *SendV2XMaliciousMessagesChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -587,19 +535,19 @@ public:
   void executeEffects();
 }; // SendV2XMaliciousMessagesFailureStep
 
-class InjectTamperedBinarySuccessStep : public Step {
+class SendV2XMaliciousMessagesSuccessStep : public Step {
 public:
 
-  Access *InternalRemoteAccess;
-  short* InternalRemoteAccess_Mobius_Mark;
-  Access *RemoteNetworkAccess;
-  short* RemoteNetworkAccess_Mobius_Mark;
-  Skill *InjectionSkill;
-  short* InjectionSkill_Mobius_Mark;
-  Knowledge *MessageFormatKnowledge;
-  short* MessageFormatKnowledge_Mobius_Mark;
-  StepChosen *InjectTamperedBinaryChosen;
-  short *InjectTamperedBinaryChosen_Mobius_Mark;
+  Access *CompromisedGatewayAccess;
+  short* CompromisedGatewayAccess_Mobius_Mark;
+  Skill *V2XPacketCraftingSkill;
+  short* V2XPacketCraftingSkill_Mobius_Mark;
+  Access *ProximityNetworkAccess;
+  short* ProximityNetworkAccess_Mobius_Mark;
+  Knowledge *V2xProtocolKnowledge;
+  short* V2xProtocolKnowledge_Mobius_Mark;
+  StepChosen *SendV2XMaliciousMessagesChosen;
+  short *SendV2XMaliciousMessagesChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
   short *ReflashGatewayChipWeight_Mobius_Mark;
   StepWeight *DoNothingWeight;
@@ -620,8 +568,8 @@ public:
   short *MakeDecision_Mobius_Mark;
   double *TheDistributionParameters;
 
-  InjectTamperedBinarySuccessStep();
-  ~InjectTamperedBinarySuccessStep();
+  SendV2XMaliciousMessagesSuccessStep();
+  ~SendV2XMaliciousMessagesSuccessStep();
   bool Enabled();
   void LinkVariables();
   double Weight();
@@ -636,7 +584,7 @@ public:
   double timeDistributionParameter0();
   bool preconditionsMet();
   void executeEffects();
-}; // InjectTamperedBinarySuccessStep
+}; // SendV2XMaliciousMessagesSuccessStep
 
 class InjectTamperedBinaryFailureStep : public Step {
 public:
@@ -689,17 +637,19 @@ public:
   void executeEffects();
 }; // InjectTamperedBinaryFailureStep
 
-class InjectMaliciousCANMessagesSuccessStep : public Step {
+class InjectTamperedBinarySuccessStep : public Step {
 public:
 
-  Access *InternalCANAccess;
-  short* InternalCANAccess_Mobius_Mark;
-  Skill *SpoofingSkill;
-  short* SpoofingSkill_Mobius_Mark;
-  Access *CompromisedGatewayAccess;
-  short* CompromisedGatewayAccess_Mobius_Mark;
-  StepChosen *InjectMaliciousCANMessagesChosen;
-  short *InjectMaliciousCANMessagesChosen_Mobius_Mark;
+  Access *InternalRemoteAccess;
+  short* InternalRemoteAccess_Mobius_Mark;
+  Access *RemoteNetworkAccess;
+  short* RemoteNetworkAccess_Mobius_Mark;
+  Skill *InjectionSkill;
+  short* InjectionSkill_Mobius_Mark;
+  Knowledge *MessageFormatKnowledge;
+  short* MessageFormatKnowledge_Mobius_Mark;
+  StepChosen *InjectTamperedBinaryChosen;
+  short *InjectTamperedBinaryChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
   short *ReflashGatewayChipWeight_Mobius_Mark;
   StepWeight *DoNothingWeight;
@@ -720,8 +670,8 @@ public:
   short *MakeDecision_Mobius_Mark;
   double *TheDistributionParameters;
 
-  InjectMaliciousCANMessagesSuccessStep();
-  ~InjectMaliciousCANMessagesSuccessStep();
+  InjectTamperedBinarySuccessStep();
+  ~InjectTamperedBinarySuccessStep();
   bool Enabled();
   void LinkVariables();
   double Weight();
@@ -736,7 +686,7 @@ public:
   double timeDistributionParameter0();
   bool preconditionsMet();
   void executeEffects();
-}; // InjectMaliciousCANMessagesSuccessStep
+}; // InjectTamperedBinarySuccessStep
 
 class InjectMaliciousCANMessagesFailureStep : public Step {
 public:
@@ -787,17 +737,17 @@ public:
   void executeEffects();
 }; // InjectMaliciousCANMessagesFailureStep
 
-class ExtractDataRemotelySuccessStep : public Step {
+class InjectMaliciousCANMessagesSuccessStep : public Step {
 public:
 
-  Goal *StealPrivateData;
-  short* StealPrivateData_Mobius_Mark;
-  Skill *DataExtractionSkill;
-  short* DataExtractionSkill_Mobius_Mark;
-  Access *InternalRemoteAccess;
-  short* InternalRemoteAccess_Mobius_Mark;
-  StepChosen *ExtractDataRemotelyChosen;
-  short *ExtractDataRemotelyChosen_Mobius_Mark;
+  Access *InternalCANAccess;
+  short* InternalCANAccess_Mobius_Mark;
+  Skill *SpoofingSkill;
+  short* SpoofingSkill_Mobius_Mark;
+  Access *CompromisedGatewayAccess;
+  short* CompromisedGatewayAccess_Mobius_Mark;
+  StepChosen *InjectMaliciousCANMessagesChosen;
+  short *InjectMaliciousCANMessagesChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
   short *ReflashGatewayChipWeight_Mobius_Mark;
   StepWeight *DoNothingWeight;
@@ -818,8 +768,8 @@ public:
   short *MakeDecision_Mobius_Mark;
   double *TheDistributionParameters;
 
-  ExtractDataRemotelySuccessStep();
-  ~ExtractDataRemotelySuccessStep();
+  InjectMaliciousCANMessagesSuccessStep();
+  ~InjectMaliciousCANMessagesSuccessStep();
   bool Enabled();
   void LinkVariables();
   double Weight();
@@ -834,7 +784,7 @@ public:
   double timeDistributionParameter0();
   bool preconditionsMet();
   void executeEffects();
-}; // ExtractDataRemotelySuccessStep
+}; // InjectMaliciousCANMessagesSuccessStep
 
 class ExtractDataRemotelyFailureStep : public Step {
 public:
@@ -885,19 +835,17 @@ public:
   void executeEffects();
 }; // ExtractDataRemotelyFailureStep
 
-class ImpersonateOEMSuccessStep : public Step {
+class ExtractDataRemotelySuccessStep : public Step {
 public:
 
+  Goal *StealPrivateData;
+  short* StealPrivateData_Mobius_Mark;
+  Skill *DataExtractionSkill;
+  short* DataExtractionSkill_Mobius_Mark;
   Access *InternalRemoteAccess;
   short* InternalRemoteAccess_Mobius_Mark;
-  Knowledge *CarModelKnowledge;
-  short* CarModelKnowledge_Mobius_Mark;
-  Skill *SpoofingSkill;
-  short* SpoofingSkill_Mobius_Mark;
-  Access *RemoteNetworkAccess;
-  short* RemoteNetworkAccess_Mobius_Mark;
-  StepChosen *ImpersonateOEMChosen;
-  short *ImpersonateOEMChosen_Mobius_Mark;
+  StepChosen *ExtractDataRemotelyChosen;
+  short *ExtractDataRemotelyChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
   short *ReflashGatewayChipWeight_Mobius_Mark;
   StepWeight *DoNothingWeight;
@@ -918,8 +866,8 @@ public:
   short *MakeDecision_Mobius_Mark;
   double *TheDistributionParameters;
 
-  ImpersonateOEMSuccessStep();
-  ~ImpersonateOEMSuccessStep();
+  ExtractDataRemotelySuccessStep();
+  ~ExtractDataRemotelySuccessStep();
   bool Enabled();
   void LinkVariables();
   double Weight();
@@ -934,19 +882,19 @@ public:
   double timeDistributionParameter0();
   bool preconditionsMet();
   void executeEffects();
-}; // ImpersonateOEMSuccessStep
+}; // ExtractDataRemotelySuccessStep
 
 class ImpersonateOEMFailureStep : public Step {
 public:
 
   Access *InternalRemoteAccess;
   short* InternalRemoteAccess_Mobius_Mark;
+  Access *RemoteNetworkAccess;
+  short* RemoteNetworkAccess_Mobius_Mark;
   Knowledge *CarModelKnowledge;
   short* CarModelKnowledge_Mobius_Mark;
   Skill *SpoofingSkill;
   short* SpoofingSkill_Mobius_Mark;
-  Access *RemoteNetworkAccess;
-  short* RemoteNetworkAccess_Mobius_Mark;
   StepChosen *ImpersonateOEMChosen;
   short *ImpersonateOEMChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -987,14 +935,65 @@ public:
   void executeEffects();
 }; // ImpersonateOEMFailureStep
 
+class ImpersonateOEMSuccessStep : public Step {
+public:
+
+  Access *InternalRemoteAccess;
+  short* InternalRemoteAccess_Mobius_Mark;
+  Access *RemoteNetworkAccess;
+  short* RemoteNetworkAccess_Mobius_Mark;
+  Knowledge *CarModelKnowledge;
+  short* CarModelKnowledge_Mobius_Mark;
+  Skill *SpoofingSkill;
+  short* SpoofingSkill_Mobius_Mark;
+  StepChosen *ImpersonateOEMChosen;
+  short *ImpersonateOEMChosen_Mobius_Mark;
+  StepWeight *ReflashGatewayChipWeight;
+  short *ReflashGatewayChipWeight_Mobius_Mark;
+  StepWeight *DoNothingWeight;
+  short *DoNothingWeight_Mobius_Mark;
+  StepWeight *ExtractDataViaCANBusWeight;
+  short *ExtractDataViaCANBusWeight_Mobius_Mark;
+  StepWeight *SendV2XMaliciousMessagesWeight;
+  short *SendV2XMaliciousMessagesWeight_Mobius_Mark;
+  StepWeight *InjectTamperedBinaryWeight;
+  short *InjectTamperedBinaryWeight_Mobius_Mark;
+  StepWeight *InjectMaliciousCANMessagesWeight;
+  short *InjectMaliciousCANMessagesWeight_Mobius_Mark;
+  StepWeight *ExtractDataRemotelyWeight;
+  short *ExtractDataRemotelyWeight_Mobius_Mark;
+  StepWeight *ImpersonateOEMWeight;
+  short *ImpersonateOEMWeight_Mobius_Mark;
+  BeginAdversaryDecision *MakeDecision;
+  short *MakeDecision_Mobius_Mark;
+  double *TheDistributionParameters;
+
+  ImpersonateOEMSuccessStep();
+  ~ImpersonateOEMSuccessStep();
+  bool Enabled();
+  void LinkVariables();
+  double Weight();
+  bool ReactivationPredicate();
+  bool ReactivationFunction();
+  double SampleDistribution();
+  double* ReturnDistributionParameters();
+  double getCost();
+  double getOutcomeProbability();
+  double getDetection();
+  int Rank();
+  double timeDistributionParameter0();
+  bool preconditionsMet();
+  void executeEffects();
+}; // ImpersonateOEMSuccessStep
+
   //List of user-specified state variables
   Access *InternalRemoteAccess;
   Access *ProximityNetworkAccess;
-  Access *RemoteNetworkAccess;
   Access *CompromisedGatewayAccess;
+  Access *RemoteNetworkAccess;
   Access *InternalCANAccess;
   Knowledge *MessageFormatKnowledge;
-  Knowledge *V2XProtocolKnowledge;
+  Knowledge *V2xProtocolKnowledge;
   Knowledge *CarModelKnowledge;
   Skill *SpoofingSkill;
   Skill *V2XPacketCraftingSkill;
@@ -1024,18 +1023,18 @@ public:
   ReflashGatewayChipFailureStep ReflashGatewayChipFailure;
   ReflashGatewayChipSuccessStep ReflashGatewayChipSuccess;
   DoNothingNothingStep DoNothingNothing;
-  ExtractDataViaCANBusSuccessStep ExtractDataViaCANBusSuccess;
   ExtractDataViaCANBusFailureStep ExtractDataViaCANBusFailure;
-  SendV2XMaliciousMessagesSuccessStep SendV2XMaliciousMessagesSuccess;
+  ExtractDataViaCANBusSuccessStep ExtractDataViaCANBusSuccess;
   SendV2XMaliciousMessagesFailureStep SendV2XMaliciousMessagesFailure;
-  InjectTamperedBinarySuccessStep InjectTamperedBinarySuccess;
+  SendV2XMaliciousMessagesSuccessStep SendV2XMaliciousMessagesSuccess;
   InjectTamperedBinaryFailureStep InjectTamperedBinaryFailure;
-  InjectMaliciousCANMessagesSuccessStep InjectMaliciousCANMessagesSuccess;
+  InjectTamperedBinarySuccessStep InjectTamperedBinarySuccess;
   InjectMaliciousCANMessagesFailureStep InjectMaliciousCANMessagesFailure;
-  ExtractDataRemotelySuccessStep ExtractDataRemotelySuccess;
+  InjectMaliciousCANMessagesSuccessStep InjectMaliciousCANMessagesSuccess;
   ExtractDataRemotelyFailureStep ExtractDataRemotelyFailure;
-  ImpersonateOEMSuccessStep ImpersonateOEMSuccess;
+  ExtractDataRemotelySuccessStep ExtractDataRemotelySuccess;
   ImpersonateOEMFailureStep ImpersonateOEMFailure;
+  ImpersonateOEMSuccessStep ImpersonateOEMSuccess;
   ReflashGatewayChipAdversaryDecision ReflashGatewayChipAD;
   DoNothingAdversaryDecision DoNothingAD;
   ExtractDataViaCANBusAdversaryDecision ExtractDataViaCANBusAD;

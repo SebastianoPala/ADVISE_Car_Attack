@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<models:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/projects" name="ADVISE_Car_Attack" author="student" creationDate="2026-05-28T09:25:03.124+0200" lastSavedVersion="2.5.10.201907151645">
+<models:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/projects" name="ADVISE_Car_Attack" author="student" creationDate="2026-08-31T22:31:02.910+0200" lastSavedVersion="2.5.10.201907151645">
   <atomic key="Car">
     <value name="Car" type="ADVISE Model"/>
   </atomic>
@@ -12,28 +12,27 @@
   <solver key="CarSim">
     <value name="CarSim" category="Solver" type="Simulator"/>
   </solver>
-  <globalVariable name="hasProximityNetworkAccess" type="Bool"/>
-  <globalVariable name="hasRemoteNetworkAccess" type="Bool"/>
-  <globalVariable name="hasMessageFormatKnowledge" type="Bool"/>
-  <globalVariable name="hasCarModelKnowledge" type="Bool"/>
-  <globalVariable name="hasV2XProtocolKnowledge" type="Bool"/>
-  <globalVariable name="spoofingSkillLevel"/>
-  <globalVariable name="chipFlashingSkillLevel"/>
-  <globalVariable name="injectionSkillLevel"/>
-  <globalVariable name="v2XPacketCraftingSkillLevel"/>
-  <globalVariable name="dataExtractionSkillLevel"/>
+  <globalVariable name="maliciousV2XMessagesCost"/>
+  <globalVariable name="maliciousV2XMessagesTime"/>
   <globalVariable name="v2XPacketCraftingSkillThreshold"/>
-  <globalVariable name="injectionSkillThreshold"/>
-  <globalVariable name="chipFlashingSkillThreshold"/>
-  <globalVariable name="remoteDataExtractionThreshold"/>
+  <globalVariable name="v2XPacketCraftingSkillLevel"/>
+  <globalVariable name="maliciousCANMessagesCost"/>
+  <globalVariable name="maliciousCANMessagesTime"/>
+  <globalVariable name="hasProximityAccess" type="Bool"/>
+  <globalVariable name="hasRemoteNetworkAccess" type="Bool"/>
+  <globalVariable name="hasV2XProtocolKnowledge" type="Bool"/>
+  <globalVariable name="hasCarModelKnowledge" type="Bool"/>
+  <globalVariable name="hasMessageFormatKnowledge" type="Bool"/>
+  <globalVariable name="spoofingSkillLevel"/>
+  <globalVariable name="injectionSkillLevel"/>
+  <globalVariable name="chipFlashingSkillLevel"/>
+  <globalVariable name="dataExtractionSkillLevel"/>
   <globalVariable name="CANSpoofingSkillThreshold"/>
   <globalVariable name="OEMSpoofingSkillThreshold"/>
-  <globalVariable name="maliciousV2XCost"/>
-  <globalVariable name="maliciousCANCost"/>
-  <globalVariable name="remoteExtractionCost"/>
-  <globalVariable name="reflashChipCost"/>
-  <globalVariable name="OEMImpersonationCost"/>
-  <globalVariable name="binaryInjectionCost"/>
+  <globalVariable name="CANExtractionSkillThreshold"/>
+  <globalVariable name="remoteExtractionSkillThreshold"/>
+  <globalVariable name="injectionSkillThreshold"/>
+  <globalVariable name="chipFlashingSkillThreshold"/>
   <globalVariable name="CANExtractionCost"/>
-  <globalVariable name="CANDataExtractionSkillThreshold"/>
+  <globalVariable name="CANExtractionTime"/>
 </models:Project>

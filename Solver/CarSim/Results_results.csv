@@ -1,0 +1,765 @@
+Simulator Results
+Date:, Fri Jul 03 13:22:46 CEST 2026
+
+Simulator Configuration
+Simulation Type:,Terminating
+Project Name:,ADVISE_Car_Attack
+Study Name:,CarStudy
+Random Number Generator:,Mersenne Twister
+Random Number Seed:,31415
+Maximum Batches:,10000
+Minimum Batches:,1000
+Data Reporting Frequency:,1000
+Display Update Frequency:,1000
+BuildType:,Normal
+Execution Architecture:,64-bit
+Runname:,Results
+Output File:,Results_output.txt
+Results File:,Results_results
+Jackknife Variance:,On
+Processors Per Experiment:,1
+Maximize Processor Usage:,true
+Processors Selected for Simulation:
+student-VirtualBox,amd64
+
+Experiment 2280
+Experiment 2280,Start Time:,Fri Jul 03 13:22:40 CEST 2026
+Experiment 2280,Finish Time:,Fri Jul 03 13:22:41 CEST 2026
+Experiment 2280,Elapsed Running Time:,1.665
+Experiment 2280,Total CPU Time:,1.24999
+Experiment 2280,Batches Completed:,1000
+Experiment 2280,Experiment Name:,Experiment 2280
+Experiment 2280,Global Variable Settings:
+Experiment 2280,short,CANExtractionCost,2
+Experiment 2280,short,CANExtractionSkillThreshold,250
+Experiment 2280,short,CANExtractionTime,2
+Experiment 2280,short,CANSpoofingSkillThreshold,350
+Experiment 2280,short,OEMSpoofingSkillThreshold,450
+Experiment 2280,short,chipFlashingSkillLevel,1000
+Experiment 2280,short,chipFlashingSkillThreshold,700
+Experiment 2280,short,dataExtractionSkillLevel,1000
+Experiment 2280,bool,hasCarModelKnowledge,1
+Experiment 2280,bool,hasMessageFormatKnowledge,1
+Experiment 2280,bool,hasProximityAccess,0
+Experiment 2280,bool,hasRemoteNetworkAccess,1
+Experiment 2280,bool,hasV2XProtocolKnowledge,1
+Experiment 2280,short,injectionSkillLevel,1000
+Experiment 2280,short,injectionSkillThreshold,500
+Experiment 2280,short,maliciousCANMessagesCost,1
+Experiment 2280,short,maliciousCANMessagesTime,2
+Experiment 2280,short,maliciousV2XMessagesCost,2
+Experiment 2280,short,maliciousV2XMessagesTime,3
+Experiment 2280,short,remoteExtractionSkillThreshold,300
+Experiment 2280,short,spoofingSkillLevel,1000
+Experiment 2280,short,v2XPacketCraftingSkillLevel,1000
+Experiment 2280,short,v2XPacketCraftingSkillThreshold,300
+Experiment 2280, Results
+Experiment 2280,Result Type,Name,Start Time,End Time,Mean,,Confidence Interval,Failed To Converge
+Experiment 2280,Mean,StealData,0.0,0.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,1.0,1.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,2.0,2.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,3.0,3.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,4.0,4.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,5.0,5.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,6.0,6.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,7.0,7.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,8.0,8.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,9.0,9.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,10.0,10.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2280,Mean,StealData,11.0,11.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2280,Mean,StealData,12.0,12.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2280,Mean,StealData,13.0,13.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2280,Mean,StealData,14.0,14.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2280,Mean,StealData,15.0,15.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2280,Mean,StealData,16.0,16.0,7.5900000000E-01,+/-,2.6521784168E-02
+Experiment 2280,Mean,StealData,17.0,17.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2280,Mean,StealData,18.0,18.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2280,Mean,StealData,19.0,19.0,9.0300000000E-01,+/-,1.8352831172E-02
+Experiment 2280,Mean,StealData,20.0,20.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2280,Mean,StealData,21.0,21.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2280,Mean,StealData,22.0,22.0,9.4200000000E-01,+/-,1.4494818293E-02
+Experiment 2280,Mean,StealData,23.0,23.0,9.5400000000E-01,+/-,1.2990516846E-02
+Experiment 2280,Mean,StealData,24.0,24.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2280,Mean,StealData,25.0,25.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2280,Mean,StealData,26.0,26.0,9.8300000000E-01,+/-,8.0163107998E-03
+Experiment 2280,Mean,StealData,27.0,27.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2280,Mean,StealData,28.0,28.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2280,Mean,StealData,29.0,29.0,9.8900000000E-01,+/-,6.4679673006E-03
+Experiment 2280,Mean,StealData,30.0,30.0,9.9000000000E-01,+/-,6.1700818398E-03
+Experiment 2280,Mean,StealData,31.0,31.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2280,Mean,StealData,32.0,32.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2280,Mean,StealData,33.0,33.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2280,Mean,StealData,34.0,34.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2280,Mean,StealData,35.0,35.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2280,Mean,StealData,36.0,36.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2280,Mean,StealData,37.0,37.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2280,Mean,StealData,38.0,38.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2280,Mean,StealData,39.0,39.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2280,Mean,StealData,40.0,40.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2280,Mean,StealData,41.0,41.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,42.0,42.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,43.0,43.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,44.0,44.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,45.0,45.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,46.0,46.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,47.0,47.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,48.0,48.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,49.0,49.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,50.0,50.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,51.0,51.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,52.0,52.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,53.0,53.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,54.0,54.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,55.0,55.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,56.0,56.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,57.0,57.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,58.0,58.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,59.0,59.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,60.0,60.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,61.0,61.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,62.0,62.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,63.0,63.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,64.0,64.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,65.0,65.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,66.0,66.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,67.0,67.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,68.0,68.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,69.0,69.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,70.0,70.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,71.0,71.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,72.0,72.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,73.0,73.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,74.0,74.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,75.0,75.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,76.0,76.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,77.0,77.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,78.0,78.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,79.0,79.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,80.0,80.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,81.0,81.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,82.0,82.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,83.0,83.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,84.0,84.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,85.0,85.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,86.0,86.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,87.0,87.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,88.0,88.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,89.0,89.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,90.0,90.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,91.0,91.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,92.0,92.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,93.0,93.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,94.0,94.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,95.0,95.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,96.0,96.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,97.0,97.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,98.0,98.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,99.0,99.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,100.0,100.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,101.0,101.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,102.0,102.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,103.0,103.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,104.0,104.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,105.0,105.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,106.0,106.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,107.0,107.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,108.0,108.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,109.0,109.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,110.0,110.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,111.0,111.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,112.0,112.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,113.0,113.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,114.0,114.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,115.0,115.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,116.0,116.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,117.0,117.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,118.0,118.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,119.0,119.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,120.0,120.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,121.0,121.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,122.0,122.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,123.0,123.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,124.0,124.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,125.0,125.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,126.0,126.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,127.0,127.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,128.0,128.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,129.0,129.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,130.0,130.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,131.0,131.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,132.0,132.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,133.0,133.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,134.0,134.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,135.0,135.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,136.0,136.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,137.0,137.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,138.0,138.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,139.0,139.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,140.0,140.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,141.0,141.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,142.0,142.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,143.0,143.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,144.0,144.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,145.0,145.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,146.0,146.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,147.0,147.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,148.0,148.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,149.0,149.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2280,Mean,StealData,150.0,150.0,1.0000000000E00 ,+/-,0.0000000000E00 
+
+Experiment 2302
+Experiment 2302,Start Time:,Fri Jul 03 13:22:41 CEST 2026
+Experiment 2302,Finish Time:,Fri Jul 03 13:22:43 CEST 2026
+Experiment 2302,Elapsed Running Time:,1.746
+Experiment 2302,Total CPU Time:,1.324953
+Experiment 2302,Batches Completed:,1000
+Experiment 2302,Experiment Name:,Experiment 2302
+Experiment 2302,Global Variable Settings:
+Experiment 2302,short,CANExtractionCost,2
+Experiment 2302,short,CANExtractionSkillThreshold,250
+Experiment 2302,short,CANExtractionTime,2
+Experiment 2302,short,CANSpoofingSkillThreshold,350
+Experiment 2302,short,OEMSpoofingSkillThreshold,450
+Experiment 2302,short,chipFlashingSkillLevel,1000
+Experiment 2302,short,chipFlashingSkillThreshold,700
+Experiment 2302,short,dataExtractionSkillLevel,275
+Experiment 2302,bool,hasCarModelKnowledge,1
+Experiment 2302,bool,hasMessageFormatKnowledge,1
+Experiment 2302,bool,hasProximityAccess,1
+Experiment 2302,bool,hasRemoteNetworkAccess,1
+Experiment 2302,bool,hasV2XProtocolKnowledge,1
+Experiment 2302,short,injectionSkillLevel,1000
+Experiment 2302,short,injectionSkillThreshold,500
+Experiment 2302,short,maliciousCANMessagesCost,1
+Experiment 2302,short,maliciousCANMessagesTime,2
+Experiment 2302,short,maliciousV2XMessagesCost,2
+Experiment 2302,short,maliciousV2XMessagesTime,3
+Experiment 2302,short,remoteExtractionSkillThreshold,300
+Experiment 2302,short,spoofingSkillLevel,1000
+Experiment 2302,short,v2XPacketCraftingSkillLevel,1000
+Experiment 2302,short,v2XPacketCraftingSkillThreshold,300
+Experiment 2302, Results
+Experiment 2302,Result Type,Name,Start Time,End Time,Mean,,Confidence Interval,Failed To Converge
+Experiment 2302,Mean,StealData,0.0,0.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,1.0,1.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,2.0,2.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,3.0,3.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,4.0,4.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,5.0,5.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,6.0,6.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,7.0,7.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,8.0,8.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,9.0,9.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,10.0,10.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,11.0,11.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,12.0,12.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,13.0,13.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,14.0,14.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,15.0,15.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,16.0,16.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,17.0,17.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,18.0,18.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,19.0,19.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,20.0,20.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,21.0,21.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,22.0,22.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,23.0,23.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,24.0,24.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,25.0,25.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,26.0,26.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,27.0,27.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,28.0,28.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,29.0,29.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,30.0,30.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,31.0,31.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,32.0,32.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,33.0,33.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,34.0,34.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,35.0,35.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,36.0,36.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,37.0,37.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,38.0,38.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,39.0,39.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,40.0,40.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,41.0,41.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,42.0,42.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,43.0,43.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,44.0,44.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,45.0,45.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,46.0,46.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,47.0,47.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,48.0,48.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,49.0,49.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,50.0,50.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,51.0,51.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,52.0,52.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,53.0,53.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,54.0,54.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,55.0,55.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,56.0,56.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,57.0,57.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,58.0,58.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,59.0,59.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,60.0,60.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,61.0,61.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,62.0,62.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,63.0,63.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,64.0,64.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,65.0,65.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,66.0,66.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,67.0,67.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,68.0,68.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,69.0,69.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,70.0,70.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,71.0,71.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,72.0,72.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,73.0,73.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,74.0,74.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,75.0,75.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,76.0,76.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,77.0,77.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,78.0,78.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,79.0,79.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,80.0,80.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,81.0,81.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,82.0,82.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,83.0,83.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,84.0,84.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,85.0,85.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,86.0,86.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,87.0,87.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,88.0,88.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,89.0,89.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,90.0,90.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,91.0,91.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,92.0,92.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,93.0,93.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,94.0,94.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,95.0,95.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,96.0,96.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,97.0,97.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,98.0,98.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,99.0,99.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,100.0,100.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,101.0,101.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,102.0,102.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,103.0,103.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,104.0,104.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,105.0,105.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,106.0,106.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,107.0,107.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,108.0,108.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,109.0,109.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,110.0,110.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,111.0,111.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,112.0,112.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,113.0,113.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,114.0,114.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,115.0,115.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,116.0,116.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,117.0,117.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,118.0,118.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,119.0,119.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,120.0,120.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,121.0,121.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,122.0,122.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,123.0,123.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,124.0,124.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,125.0,125.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,126.0,126.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,127.0,127.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,128.0,128.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,129.0,129.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,130.0,130.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,131.0,131.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,132.0,132.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,133.0,133.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,134.0,134.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,135.0,135.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,136.0,136.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,137.0,137.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,138.0,138.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,139.0,139.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,140.0,140.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,141.0,141.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,142.0,142.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,143.0,143.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,144.0,144.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,145.0,145.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,146.0,146.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,147.0,147.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,148.0,148.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,149.0,149.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2302,Mean,StealData,150.0,150.0,0.0000000000E00 ,+/-,0.0000000000E00 
+
+Experiment 2303
+Experiment 2303,Start Time:,Fri Jul 03 13:22:43 CEST 2026
+Experiment 2303,Finish Time:,Fri Jul 03 13:22:45 CEST 2026
+Experiment 2303,Elapsed Running Time:,1.625
+Experiment 2303,Total CPU Time:,1.1695840000000002
+Experiment 2303,Batches Completed:,1000
+Experiment 2303,Experiment Name:,Experiment 2303
+Experiment 2303,Global Variable Settings:
+Experiment 2303,short,CANExtractionCost,2
+Experiment 2303,short,CANExtractionSkillThreshold,250
+Experiment 2303,short,CANExtractionTime,2
+Experiment 2303,short,CANSpoofingSkillThreshold,350
+Experiment 2303,short,OEMSpoofingSkillThreshold,450
+Experiment 2303,short,chipFlashingSkillLevel,0
+Experiment 2303,short,chipFlashingSkillThreshold,700
+Experiment 2303,short,dataExtractionSkillLevel,1000
+Experiment 2303,bool,hasCarModelKnowledge,1
+Experiment 2303,bool,hasMessageFormatKnowledge,1
+Experiment 2303,bool,hasProximityAccess,1
+Experiment 2303,bool,hasRemoteNetworkAccess,1
+Experiment 2303,bool,hasV2XProtocolKnowledge,1
+Experiment 2303,short,injectionSkillLevel,1000
+Experiment 2303,short,injectionSkillThreshold,500
+Experiment 2303,short,maliciousCANMessagesCost,1
+Experiment 2303,short,maliciousCANMessagesTime,2
+Experiment 2303,short,maliciousV2XMessagesCost,2
+Experiment 2303,short,maliciousV2XMessagesTime,3
+Experiment 2303,short,remoteExtractionSkillThreshold,300
+Experiment 2303,short,spoofingSkillLevel,1000
+Experiment 2303,short,v2XPacketCraftingSkillLevel,1000
+Experiment 2303,short,v2XPacketCraftingSkillThreshold,300
+Experiment 2303, Results
+Experiment 2303,Result Type,Name,Start Time,End Time,Mean,,Confidence Interval,Failed To Converge
+Experiment 2303,Mean,StealData,0.0,0.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,1.0,1.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,2.0,2.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,3.0,3.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,4.0,4.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,5.0,5.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,6.0,6.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,7.0,7.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,8.0,8.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,9.0,9.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,10.0,10.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2303,Mean,StealData,11.0,11.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2303,Mean,StealData,12.0,12.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2303,Mean,StealData,13.0,13.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2303,Mean,StealData,14.0,14.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2303,Mean,StealData,15.0,15.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2303,Mean,StealData,16.0,16.0,7.5900000000E-01,+/-,2.6521784168E-02
+Experiment 2303,Mean,StealData,17.0,17.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2303,Mean,StealData,18.0,18.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2303,Mean,StealData,19.0,19.0,9.0300000000E-01,+/-,1.8352831172E-02
+Experiment 2303,Mean,StealData,20.0,20.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2303,Mean,StealData,21.0,21.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2303,Mean,StealData,22.0,22.0,9.4200000000E-01,+/-,1.4494818293E-02
+Experiment 2303,Mean,StealData,23.0,23.0,9.5400000000E-01,+/-,1.2990516846E-02
+Experiment 2303,Mean,StealData,24.0,24.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2303,Mean,StealData,25.0,25.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2303,Mean,StealData,26.0,26.0,9.8300000000E-01,+/-,8.0163107998E-03
+Experiment 2303,Mean,StealData,27.0,27.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2303,Mean,StealData,28.0,28.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2303,Mean,StealData,29.0,29.0,9.8900000000E-01,+/-,6.4679673006E-03
+Experiment 2303,Mean,StealData,30.0,30.0,9.9000000000E-01,+/-,6.1700818398E-03
+Experiment 2303,Mean,StealData,31.0,31.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2303,Mean,StealData,32.0,32.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2303,Mean,StealData,33.0,33.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2303,Mean,StealData,34.0,34.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2303,Mean,StealData,35.0,35.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2303,Mean,StealData,36.0,36.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2303,Mean,StealData,37.0,37.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2303,Mean,StealData,38.0,38.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2303,Mean,StealData,39.0,39.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2303,Mean,StealData,40.0,40.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2303,Mean,StealData,41.0,41.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,42.0,42.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,43.0,43.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,44.0,44.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,45.0,45.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,46.0,46.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,47.0,47.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,48.0,48.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,49.0,49.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,50.0,50.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,51.0,51.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,52.0,52.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,53.0,53.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,54.0,54.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,55.0,55.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,56.0,56.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,57.0,57.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,58.0,58.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,59.0,59.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,60.0,60.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,61.0,61.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,62.0,62.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,63.0,63.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,64.0,64.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,65.0,65.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,66.0,66.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,67.0,67.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,68.0,68.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,69.0,69.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,70.0,70.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,71.0,71.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,72.0,72.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,73.0,73.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,74.0,74.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,75.0,75.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,76.0,76.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,77.0,77.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,78.0,78.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,79.0,79.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,80.0,80.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,81.0,81.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,82.0,82.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,83.0,83.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,84.0,84.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,85.0,85.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,86.0,86.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,87.0,87.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,88.0,88.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,89.0,89.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,90.0,90.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,91.0,91.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,92.0,92.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,93.0,93.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,94.0,94.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,95.0,95.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,96.0,96.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,97.0,97.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,98.0,98.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,99.0,99.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,100.0,100.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,101.0,101.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,102.0,102.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,103.0,103.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,104.0,104.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,105.0,105.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,106.0,106.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,107.0,107.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,108.0,108.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,109.0,109.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,110.0,110.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,111.0,111.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,112.0,112.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,113.0,113.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,114.0,114.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,115.0,115.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,116.0,116.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,117.0,117.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,118.0,118.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,119.0,119.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,120.0,120.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,121.0,121.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,122.0,122.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,123.0,123.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,124.0,124.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,125.0,125.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,126.0,126.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,127.0,127.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,128.0,128.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,129.0,129.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,130.0,130.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,131.0,131.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,132.0,132.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,133.0,133.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,134.0,134.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,135.0,135.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,136.0,136.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,137.0,137.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,138.0,138.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,139.0,139.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,140.0,140.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,141.0,141.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,142.0,142.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,143.0,143.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,144.0,144.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,145.0,145.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,146.0,146.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,147.0,147.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,148.0,148.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,149.0,149.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2303,Mean,StealData,150.0,150.0,1.0000000000E00 ,+/-,0.0000000000E00 
+
+Experiment 2304
+Experiment 2304,Start Time:,Fri Jul 03 13:22:45 CEST 2026
+Experiment 2304,Finish Time:,Fri Jul 03 13:22:46 CEST 2026
+Experiment 2304,Elapsed Running Time:,1.566
+Experiment 2304,Total CPU Time:,1.351293
+Experiment 2304,Batches Completed:,1000
+Experiment 2304,Experiment Name:,Experiment 2304
+Experiment 2304,Global Variable Settings:
+Experiment 2304,short,CANExtractionCost,2
+Experiment 2304,short,CANExtractionSkillThreshold,250
+Experiment 2304,short,CANExtractionTime,2
+Experiment 2304,short,CANSpoofingSkillThreshold,350
+Experiment 2304,short,OEMSpoofingSkillThreshold,450
+Experiment 2304,short,chipFlashingSkillLevel,1000
+Experiment 2304,short,chipFlashingSkillThreshold,700
+Experiment 2304,short,dataExtractionSkillLevel,1000
+Experiment 2304,bool,hasCarModelKnowledge,1
+Experiment 2304,bool,hasMessageFormatKnowledge,1
+Experiment 2304,bool,hasProximityAccess,1
+Experiment 2304,bool,hasRemoteNetworkAccess,1
+Experiment 2304,bool,hasV2XProtocolKnowledge,1
+Experiment 2304,short,injectionSkillLevel,1000
+Experiment 2304,short,injectionSkillThreshold,500
+Experiment 2304,short,maliciousCANMessagesCost,1
+Experiment 2304,short,maliciousCANMessagesTime,2
+Experiment 2304,short,maliciousV2XMessagesCost,2
+Experiment 2304,short,maliciousV2XMessagesTime,3
+Experiment 2304,short,remoteExtractionSkillThreshold,300
+Experiment 2304,short,spoofingSkillLevel,1000
+Experiment 2304,short,v2XPacketCraftingSkillLevel,1000
+Experiment 2304,short,v2XPacketCraftingSkillThreshold,300
+Experiment 2304, Results
+Experiment 2304,Result Type,Name,Start Time,End Time,Mean,,Confidence Interval,Failed To Converge
+Experiment 2304,Mean,StealData,0.0,0.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,1.0,1.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,2.0,2.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,3.0,3.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,4.0,4.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,5.0,5.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,6.0,6.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,7.0,7.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,8.0,8.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,9.0,9.0,0.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,10.0,10.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2304,Mean,StealData,11.0,11.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2304,Mean,StealData,12.0,12.0,5.7300000000E-01,+/-,3.0673587703E-02
+Experiment 2304,Mean,StealData,13.0,13.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2304,Mean,StealData,14.0,14.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2304,Mean,StealData,15.0,15.0,7.1400000000E-01,+/-,2.8022407851E-02
+Experiment 2304,Mean,StealData,16.0,16.0,7.5900000000E-01,+/-,2.6521784168E-02
+Experiment 2304,Mean,StealData,17.0,17.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2304,Mean,StealData,18.0,18.0,8.9200000000E-01,+/-,1.9247203237E-02
+Experiment 2304,Mean,StealData,19.0,19.0,9.0300000000E-01,+/-,1.8352831172E-02
+Experiment 2304,Mean,StealData,20.0,20.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2304,Mean,StealData,21.0,21.0,9.3900000000E-01,+/-,1.4841269139E-02
+Experiment 2304,Mean,StealData,22.0,22.0,9.4200000000E-01,+/-,1.4494818293E-02
+Experiment 2304,Mean,StealData,23.0,23.0,9.5400000000E-01,+/-,1.2990516846E-02
+Experiment 2304,Mean,StealData,24.0,24.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2304,Mean,StealData,25.0,25.0,9.8200000000E-01,+/-,8.2445190092E-03
+Experiment 2304,Mean,StealData,26.0,26.0,9.8300000000E-01,+/-,8.0163107998E-03
+Experiment 2304,Mean,StealData,27.0,27.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2304,Mean,StealData,28.0,28.0,9.8800000000E-01,+/-,6.7521553004E-03
+Experiment 2304,Mean,StealData,29.0,29.0,9.8900000000E-01,+/-,6.4679673006E-03
+Experiment 2304,Mean,StealData,30.0,30.0,9.9000000000E-01,+/-,6.1700818398E-03
+Experiment 2304,Mean,StealData,31.0,31.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2304,Mean,StealData,32.0,32.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2304,Mean,StealData,33.0,33.0,9.9500000000E-01,+/-,4.3739102747E-03
+Experiment 2304,Mean,StealData,34.0,34.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2304,Mean,StealData,35.0,35.0,9.9600000000E-01,+/-,3.9141096886E-03
+Experiment 2304,Mean,StealData,36.0,36.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2304,Mean,StealData,37.0,37.0,9.9700000000E-01,+/-,3.3914196625E-03
+Experiment 2304,Mean,StealData,38.0,38.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2304,Mean,StealData,39.0,39.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2304,Mean,StealData,40.0,40.0,9.9900000000E-01,+/-,1.9600000000E-03
+Experiment 2304,Mean,StealData,41.0,41.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,42.0,42.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,43.0,43.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,44.0,44.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,45.0,45.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,46.0,46.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,47.0,47.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,48.0,48.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,49.0,49.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,50.0,50.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,51.0,51.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,52.0,52.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,53.0,53.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,54.0,54.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,55.0,55.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,56.0,56.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,57.0,57.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,58.0,58.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,59.0,59.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,60.0,60.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,61.0,61.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,62.0,62.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,63.0,63.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,64.0,64.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,65.0,65.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,66.0,66.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,67.0,67.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,68.0,68.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,69.0,69.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,70.0,70.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,71.0,71.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,72.0,72.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,73.0,73.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,74.0,74.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,75.0,75.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,76.0,76.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,77.0,77.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,78.0,78.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,79.0,79.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,80.0,80.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,81.0,81.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,82.0,82.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,83.0,83.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,84.0,84.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,85.0,85.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,86.0,86.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,87.0,87.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,88.0,88.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,89.0,89.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,90.0,90.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,91.0,91.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,92.0,92.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,93.0,93.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,94.0,94.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,95.0,95.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,96.0,96.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,97.0,97.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,98.0,98.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,99.0,99.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,100.0,100.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,101.0,101.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,102.0,102.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,103.0,103.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,104.0,104.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,105.0,105.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,106.0,106.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,107.0,107.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,108.0,108.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,109.0,109.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,110.0,110.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,111.0,111.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,112.0,112.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,113.0,113.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,114.0,114.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,115.0,115.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,116.0,116.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,117.0,117.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,118.0,118.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,119.0,119.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,120.0,120.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,121.0,121.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,122.0,122.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,123.0,123.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,124.0,124.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,125.0,125.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,126.0,126.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,127.0,127.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,128.0,128.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,129.0,129.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,130.0,130.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,131.0,131.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,132.0,132.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,133.0,133.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,134.0,134.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,135.0,135.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,136.0,136.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,137.0,137.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,138.0,138.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,139.0,139.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,140.0,140.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,141.0,141.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,142.0,142.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,143.0,143.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,144.0,144.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,145.0,145.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,146.0,146.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,147.0,147.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,148.0,148.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,149.0,149.0,1.0000000000E00 ,+/-,0.0000000000E00 
+Experiment 2304,Mean,StealData,150.0,150.0,1.0000000000E00 ,+/-,0.0000000000E00 
+
+<END_MOBIUS_RESULTS>

@@ -22,7 +22,7 @@
 			<long id="ReportFrequency">1000</long>
 			<byte id="BuildType">1</byte>
 			<string id="BuildArch">64-bit</string>
-			<byte id="TraceLevel">1</byte>
+			<byte id="TraceLevel">2</byte>
 			<string id="Runname">Results</string>
 			<int id="DisplayUpdateFrequency">1000</int>
 			<boolean id="MaximizeProcessorUsage">true</boolean>
@@ -35,8 +35,8 @@
 			<boolean id="StoreOutput">false</boolean>
 			<boolean id="OutputASCII">false</boolean>
 			<boolean id="OutputBinary">false</boolean>
-			<boolean id="EnableMobiusTrace">true</boolean>
-			<boolean id="EnableXMLTrace">false</boolean>
+			<boolean id="EnableMobiusTrace">false</boolean>
+			<boolean id="EnableXMLTrace">true</boolean>
 		</class>
 		<class id="Mobius.Solvers.Simulators.Simulator">
 			<int id="ClassVersion">1</int>
