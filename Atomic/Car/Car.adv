@@ -2,19 +2,40 @@
 <models:AdviseAtomicModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/atomic/advise/" name="Car">
   <aeg adviseModel="/">
     <skillElements key="Injection Skill">
-      <value name="Injection Skill" codename="InjectionSkill" xpos="422" ypos="101" attackExecutionGraph="//@aeg"/>
+      <value name="Injection Skill" codename="InjectionSkill" xpos="920" ypos="56" sourceArcs="//@aeg/@arcElements.9" attackExecutionGraph="//@aeg"/>
     </skillElements>
     <skillElements key="Spoofing Skill">
-      <value name="Spoofing Skill" codename="SpoofingSkill" xpos="1008" ypos="260" sourceArcs="//@aeg/@arcElements.4" attackExecutionGraph="//@aeg"/>
+      <value name="Spoofing Skill" codename="SpoofingSkill" xpos="352" ypos="232" sourceArcs="//@aeg/@arcElements.4 //@aeg/@arcElements.14" attackExecutionGraph="//@aeg"/>
+    </skillElements>
+    <skillElements key="Sybil Attack Skill">
+      <value name="Sybil Attack Skill" codename="SybilAttackSkill" xpos="157" ypos="49" sourceArcs="//@aeg/@arcElements.11" attackExecutionGraph="//@aeg"/>
+    </skillElements>
+    <skillElements key="Data Extraction Skill">
+      <value name="Data Extraction Skill" codename="DataExtractionSkill" xpos="547" ypos="431" sourceArcs="//@aeg/@arcElements.19 //@aeg/@arcElements.20" attackExecutionGraph="//@aeg"/>
     </skillElements>
     <knowledgeElements key="Message Format Knowledge">
-      <value name="Message Format Knowledge" codename="MessageFormatKnowledge" xpos="518" ypos="72" sourceArcs="//@aeg/@arcElements.1" attackExecutionGraph="//@aeg"/>
+      <value name="Message Format Knowledge" codename="MessageFormatKnowledge" xpos="1064" ypos="81" sourceArcs="//@aeg/@arcElements.1" attackExecutionGraph="//@aeg"/>
     </knowledgeElements>
     <knowledgeElements key="Car Model Knowledge">
-      <value name="Car Model Knowledge" codename="CarModelKnowledge" xpos="878" ypos="99" sourceArcs="//@aeg/@arcElements.2" attackExecutionGraph="//@aeg"/>
+      <value name="Car Model Knowledge" codename="CarModelKnowledge" xpos="562" ypos="153" sourceArcs="//@aeg/@arcElements.2" attackExecutionGraph="//@aeg"/>
     </knowledgeElements>
-    <accessElements key="Car Wireless Network Access">
-      <value name="Car Wireless Network Access" codename="CarWirelessNetworkAccess" xpos="711" ypos="98" sourceArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.3" attackExecutionGraph="//@aeg"/>
+    <knowledgeElements key="V2X Protocol Knowledge">
+      <value name="V2X Protocol Knowledge" codename="V2XProtocolKnowledge" xpos="293" ypos="104" sourceArcs="//@aeg/@arcElements.18" attackExecutionGraph="//@aeg"/>
+    </knowledgeElements>
+    <accessElements key="Remote Network Access">
+      <value name="Remote Network Access" codename="RemoteNetworkAccess" xpos="730" ypos="124" sourceArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.3" attackExecutionGraph="//@aeg"/>
+    </accessElements>
+    <accessElements key="Internal Remote Access">
+      <value name="Internal Remote Access" codename="InternalRemoteAccess" xpos="822" ypos="397" sourceArcs="//@aeg/@arcElements.7" targetArcs="//@aeg/@arcElements.5 //@aeg/@arcElements.6" attackExecutionGraph="//@aeg"/>
+    </accessElements>
+    <accessElements key="Proximity Network Access">
+      <value name="Proximity Network Access" codename="ProximityNetworkAccess" xpos="39" ypos="67" sourceArcs="//@aeg/@arcElements.10" attackExecutionGraph="//@aeg"/>
+    </accessElements>
+    <accessElements key="Internal CAN Access">
+      <value name="Internal CAN Access" codename="InternalCANAccess" xpos="268" ypos="468" sourceArcs="//@aeg/@arcElements.12" targetArcs="//@aeg/@arcElements.15" attackExecutionGraph="//@aeg"/>
+    </accessElements>
+    <accessElements key="Trusted V2X Connection">
+      <value name="Trusted V2X Connection" codename="TrustedV2XConnection" xpos="183" ypos="269" sourceArcs="//@aeg/@arcElements.17" targetArcs="//@aeg/@arcElements.16" attackExecutionGraph="//@aeg"/>
     </accessElements>
     <stepElements key="Do Nothing">
       <value name="Do Nothing" codename="DoNothing" editMask="15" attackExecutionGraph="//@aeg" height="0" width="0" cost="return 0;">
@@ -26,8 +47,8 @@
         </timing>
       </value>
     </stepElements>
-    <stepElements key="Send Malicious Packet">
-      <value name="Send Malicious Packet" codename="SendMaliciousPacket" xpos="471" ypos="211" targetArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.1" attackExecutionGraph="//@aeg" width="150">
+    <stepElements key="Impersonate OEM">
+      <value name="Impersonate OEM" codename="ImpersonateOEM" xpos="547" ypos="291" sourceArcs="//@aeg/@arcElements.5" targetArcs="//@aeg/@arcElements.2 //@aeg/@arcElements.3 //@aeg/@arcElements.4" attackExecutionGraph="//@aeg" width="150">
         <outcomes key="Outcome 1">
           <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
         </outcomes>
@@ -36,8 +57,48 @@
         </timing>
       </value>
     </stepElements>
-    <stepElements key="Impersonate OEM">
-      <value name="Impersonate OEM" codename="ImpersonateOEM" xpos="736" ypos="399" sourceArcs="//@aeg/@arcElements.5" targetArcs="//@aeg/@arcElements.2 //@aeg/@arcElements.3 //@aeg/@arcElements.4" attackExecutionGraph="//@aeg" width="150">
+    <stepElements key="Inject Tampered Binary">
+      <value name="Inject Tampered Binary" codename="InjectTamperedBinary" xpos="920" ypos="206" sourceArcs="//@aeg/@arcElements.6" targetArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.1 //@aeg/@arcElements.9" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <stepElements key="Perform Sybil Attack">
+      <value name="Perform Sybil Attack" codename="PerformSybilAttack" xpos="88" ypos="182" sourceArcs="//@aeg/@arcElements.16" targetArcs="//@aeg/@arcElements.10 //@aeg/@arcElements.11 //@aeg/@arcElements.18" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <stepElements key="Extract Internal Data Remotely">
+      <value name="Extract Internal Data Remotely" codename="ExtractInternalDataRemotely" xpos="720" ypos="526" sourceArcs="//@aeg/@arcElements.8" targetArcs="//@aeg/@arcElements.7 //@aeg/@arcElements.20" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <stepElements key="Extract Internal Data In Proximity">
+      <value name="Extract Internal Data In Proximity" codename="ExtractInternalDataInProximity" xpos="256" ypos="578" sourceArcs="//@aeg/@arcElements.13" targetArcs="//@aeg/@arcElements.12 //@aeg/@arcElements.19" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <stepElements key="Spoof V2X Messages">
+      <value name="Spoof V2X Messages" codename="SpoofV2XMessages" xpos="198" ypos="372" sourceArcs="//@aeg/@arcElements.15" targetArcs="//@aeg/@arcElements.14 //@aeg/@arcElements.17" attackExecutionGraph="//@aeg" width="150">
         <outcomes key="Outcome 1">
           <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
         </outcomes>
@@ -47,14 +108,29 @@
       </value>
     </stepElements>
     <goalElements key="Steal Private Data">
-      <value name="Steal Private Data" codename="StealPrivateData" xpos="522" ypos="538" targetArcs="//@aeg/@arcElements.5" attackExecutionGraph="//@aeg" width="75"/>
+      <value name="Steal Private Data" codename="StealPrivateData" xpos="540" ypos="641" targetArcs="//@aeg/@arcElements.8 //@aeg/@arcElements.13" attackExecutionGraph="//@aeg" width="75"/>
     </goalElements>
     <arcElements sourceName="Car Wireless Network Access" targetName="Send Malicious Packet" targetType="Step"/>
     <arcElements sourceName="Message Format Knowledge" targetName="Send Malicious Packet" sourceType="Knowledge" targetType="Step"/>
     <arcElements sourceName="Car Model Knowledge" targetName="Impersonate OEM" sourceType="Knowledge" targetType="Step"/>
     <arcElements sourceName="Car Wireless Network Access" targetName="Impersonate OEM" targetType="Step"/>
     <arcElements sourceName="Spoofing Skill" targetName="Impersonate OEM" sourceType="Skill" targetType="Step"/>
-    <arcElements sourceName="Impersonate OEM" targetName="Steal Private Data" sourceType="Step" targetType="Goal"/>
+    <arcElements sourceName="Impersonate OEM" targetName="Internal Remote Access" sourceType="Step"/>
+    <arcElements sourceName="Inject Tampered Binary" targetName="Internal Remote Access" sourceType="Step"/>
+    <arcElements sourceName="Internal Remote Access" targetName="Extract Internal Data Remotely" targetType="Step"/>
+    <arcElements sourceName="Extract Internal Data Remotely" targetName="Steal Private Data" sourceType="Step" targetType="Goal"/>
+    <arcElements sourceName="Injection Skill" targetName="Inject Tampered Binary" sourceType="Skill" targetType="Step"/>
+    <arcElements sourceName="Proximity Network Access" targetName="QUELL'ATTACCO SYBIL" targetType="Step"/>
+    <arcElements sourceName="Sybil Attack Skill" targetName="Perform Sybil Attack" sourceType="Skill" targetType="Step"/>
+    <arcElements sourceName="Internal CAN Access" targetName="Extract Internal Data In Proximity" targetType="Step"/>
+    <arcElements sourceName="Extract Internal Data In Proximity" targetName="Steal Private Data" sourceType="Step" targetType="Goal"/>
+    <arcElements sourceName="Spoofing Skill" targetName="Spoof V2X Messages" sourceType="Skill" targetType="Step"/>
+    <arcElements sourceName="Spoof V2X Messages" targetName="Internal CAN Access" sourceType="Step"/>
+    <arcElements sourceName="Perform Sybil Attack" targetName="Trusted V2X Connection" sourceType="Step"/>
+    <arcElements sourceName="Trusted V2X Connection" targetName="Spoof V2X Messages" targetType="Step"/>
+    <arcElements sourceName="V2X Protocol Knowledge" targetName="Perform Sybil Attack" sourceType="Knowledge" targetType="Step"/>
+    <arcElements sourceName="Data Extraction Skill" targetName="Extract Internal Data In Proximity" sourceType="Skill" targetType="Step"/>
+    <arcElements sourceName="Data Extraction Skill" targetName="Extract Internal Data Remotely" sourceType="Skill" targetType="Step"/>
   </aeg>
   <adversary name="AdversaryName" codename="AdversaryName"/>
 </models:AdviseAtomicModel>
