@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <models:AdviseAtomicModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:models="http://www.mobius.illinois.edu/atomic/advise/" name="Car">
   <aeg adviseModel="/">
+    <skillElements key="Injection Skill">
+      <value name="Injection Skill" codename="InjectionSkill" xpos="422" ypos="101" attackExecutionGraph="//@aeg"/>
+    </skillElements>
+    <skillElements key="Spoofing Skill">
+      <value name="Spoofing Skill" codename="SpoofingSkill" xpos="1008" ypos="260" sourceArcs="//@aeg/@arcElements.4" attackExecutionGraph="//@aeg"/>
+    </skillElements>
+    <knowledgeElements key="Message Format Knowledge">
+      <value name="Message Format Knowledge" codename="MessageFormatKnowledge" xpos="518" ypos="72" sourceArcs="//@aeg/@arcElements.1" attackExecutionGraph="//@aeg"/>
+    </knowledgeElements>
+    <knowledgeElements key="Car Model Knowledge">
+      <value name="Car Model Knowledge" codename="CarModelKnowledge" xpos="878" ypos="99" sourceArcs="//@aeg/@arcElements.2" attackExecutionGraph="//@aeg"/>
+    </knowledgeElements>
+    <accessElements key="Car Wireless Network Access">
+      <value name="Car Wireless Network Access" codename="CarWirelessNetworkAccess" xpos="711" ypos="98" sourceArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.3" attackExecutionGraph="//@aeg"/>
+    </accessElements>
     <stepElements key="Do Nothing">
       <value name="Do Nothing" codename="DoNothing" editMask="15" attackExecutionGraph="//@aeg" height="0" width="0" cost="return 0;">
         <outcomes key="Outcome 1">
@@ -11,5 +26,35 @@
         </timing>
       </value>
     </stepElements>
+    <stepElements key="Send Malicious Packet">
+      <value name="Send Malicious Packet" codename="SendMaliciousPacket" xpos="471" ypos="211" targetArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.1" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <stepElements key="Impersonate OEM">
+      <value name="Impersonate OEM" codename="ImpersonateOEM" xpos="736" ypos="399" sourceArcs="//@aeg/@arcElements.5" targetArcs="//@aeg/@arcElements.2 //@aeg/@arcElements.3 //@aeg/@arcElements.4" attackExecutionGraph="//@aeg" width="150">
+        <outcomes key="Outcome 1">
+          <value name="Outcome 1" probability="return 1;" detection="return 0;" effects=""/>
+        </outcomes>
+        <timing distributionType="Exponential">
+          <parameters>return 1;</parameters>
+        </timing>
+      </value>
+    </stepElements>
+    <goalElements key="Steal Private Data">
+      <value name="Steal Private Data" codename="StealPrivateData" xpos="522" ypos="538" targetArcs="//@aeg/@arcElements.5" attackExecutionGraph="//@aeg" width="75"/>
+    </goalElements>
+    <arcElements sourceName="Car Wireless Network Access" targetName="Send Malicious Packet" targetType="Step"/>
+    <arcElements sourceName="Message Format Knowledge" targetName="Send Malicious Packet" sourceType="Knowledge" targetType="Step"/>
+    <arcElements sourceName="Car Model Knowledge" targetName="Impersonate OEM" sourceType="Knowledge" targetType="Step"/>
+    <arcElements sourceName="Car Wireless Network Access" targetName="Impersonate OEM" targetType="Step"/>
+    <arcElements sourceName="Spoofing Skill" targetName="Impersonate OEM" sourceType="Skill" targetType="Step"/>
+    <arcElements sourceName="Impersonate OEM" targetName="Steal Private Data" sourceType="Step" targetType="Goal"/>
   </aeg>
+  <adversary name="AdversaryName" codename="AdversaryName"/>
 </models:AdviseAtomicModel>
