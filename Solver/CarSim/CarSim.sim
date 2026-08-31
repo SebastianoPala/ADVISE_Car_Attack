@@ -25,7 +25,7 @@
 			<byte id="TraceLevel">1</byte>
 			<string id="Runname">Results</string>
 			<int id="DisplayUpdateFrequency">1000</int>
-			<boolean id="MaximizeProcessorUsage">false</boolean>
+			<boolean id="MaximizeProcessorUsage">true</boolean>
 			<int id="ProcessorsPerExperiment">1</int>
 			<int id="NumMachines">1</int>
 			<string id="MachineName">student-VirtualBox</string>

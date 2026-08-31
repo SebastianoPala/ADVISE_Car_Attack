@@ -670,7 +670,7 @@
 				<double id="StepSizeOnDistributionEstimate">0.1</double>
 				<int id="ConfidenceLevel">2</int>
 				<double id="ConfidenceInterval">0.1</double>
-				<boolean id="ConfidenceIntervalIsRelative">true</boolean>
+				<boolean id="ConfidenceIntervalIsRelative">false</boolean>
 				<boolean id="RewardIsOverAllAvailableModels">true</boolean>
 				<vector id="ImpulseIsOverAllAvailableModels">
 				</vector>

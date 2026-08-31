@@ -242,66 +242,15 @@ public:
   BaseActionClass *Fire();
 }; // ImpersonateOEMAdversaryDecision
 
-class ReflashGatewayChipSuccessStep : public Step {
-public:
-
-  Access *CompromisedGatewayAccess;
-  short* CompromisedGatewayAccess_Mobius_Mark;
-  Skill *ChipFlashingSkill;
-  short* ChipFlashingSkill_Mobius_Mark;
-  Knowledge *CarModelKnowledge;
-  short* CarModelKnowledge_Mobius_Mark;
-  Access *InternalRemoteAccess;
-  short* InternalRemoteAccess_Mobius_Mark;
-  StepChosen *ReflashGatewayChipChosen;
-  short *ReflashGatewayChipChosen_Mobius_Mark;
-  StepWeight *ReflashGatewayChipWeight;
-  short *ReflashGatewayChipWeight_Mobius_Mark;
-  StepWeight *DoNothingWeight;
-  short *DoNothingWeight_Mobius_Mark;
-  StepWeight *ExtractDataViaCANBusWeight;
-  short *ExtractDataViaCANBusWeight_Mobius_Mark;
-  StepWeight *SendV2XMaliciousMessagesWeight;
-  short *SendV2XMaliciousMessagesWeight_Mobius_Mark;
-  StepWeight *InjectTamperedBinaryWeight;
-  short *InjectTamperedBinaryWeight_Mobius_Mark;
-  StepWeight *InjectMaliciousCANMessagesWeight;
-  short *InjectMaliciousCANMessagesWeight_Mobius_Mark;
-  StepWeight *ExtractDataRemotelyWeight;
-  short *ExtractDataRemotelyWeight_Mobius_Mark;
-  StepWeight *ImpersonateOEMWeight;
-  short *ImpersonateOEMWeight_Mobius_Mark;
-  BeginAdversaryDecision *MakeDecision;
-  short *MakeDecision_Mobius_Mark;
-  double *TheDistributionParameters;
-
-  ReflashGatewayChipSuccessStep();
-  ~ReflashGatewayChipSuccessStep();
-  bool Enabled();
-  void LinkVariables();
-  double Weight();
-  bool ReactivationPredicate();
-  bool ReactivationFunction();
-  double SampleDistribution();
-  double* ReturnDistributionParameters();
-  double getCost();
-  double getOutcomeProbability();
-  double getDetection();
-  int Rank();
-  double timeDistributionParameter0();
-  bool preconditionsMet();
-  void executeEffects();
-}; // ReflashGatewayChipSuccessStep
-
 class ReflashGatewayChipFailureStep : public Step {
 public:
 
   Access *CompromisedGatewayAccess;
   short* CompromisedGatewayAccess_Mobius_Mark;
-  Skill *ChipFlashingSkill;
-  short* ChipFlashingSkill_Mobius_Mark;
   Knowledge *CarModelKnowledge;
   short* CarModelKnowledge_Mobius_Mark;
+  Skill *ChipFlashingSkill;
+  short* ChipFlashingSkill_Mobius_Mark;
   Access *InternalRemoteAccess;
   short* InternalRemoteAccess_Mobius_Mark;
   StepChosen *ReflashGatewayChipChosen;
@@ -343,6 +292,57 @@ public:
   bool preconditionsMet();
   void executeEffects();
 }; // ReflashGatewayChipFailureStep
+
+class ReflashGatewayChipSuccessStep : public Step {
+public:
+
+  Access *CompromisedGatewayAccess;
+  short* CompromisedGatewayAccess_Mobius_Mark;
+  Knowledge *CarModelKnowledge;
+  short* CarModelKnowledge_Mobius_Mark;
+  Skill *ChipFlashingSkill;
+  short* ChipFlashingSkill_Mobius_Mark;
+  Access *InternalRemoteAccess;
+  short* InternalRemoteAccess_Mobius_Mark;
+  StepChosen *ReflashGatewayChipChosen;
+  short *ReflashGatewayChipChosen_Mobius_Mark;
+  StepWeight *ReflashGatewayChipWeight;
+  short *ReflashGatewayChipWeight_Mobius_Mark;
+  StepWeight *DoNothingWeight;
+  short *DoNothingWeight_Mobius_Mark;
+  StepWeight *ExtractDataViaCANBusWeight;
+  short *ExtractDataViaCANBusWeight_Mobius_Mark;
+  StepWeight *SendV2XMaliciousMessagesWeight;
+  short *SendV2XMaliciousMessagesWeight_Mobius_Mark;
+  StepWeight *InjectTamperedBinaryWeight;
+  short *InjectTamperedBinaryWeight_Mobius_Mark;
+  StepWeight *InjectMaliciousCANMessagesWeight;
+  short *InjectMaliciousCANMessagesWeight_Mobius_Mark;
+  StepWeight *ExtractDataRemotelyWeight;
+  short *ExtractDataRemotelyWeight_Mobius_Mark;
+  StepWeight *ImpersonateOEMWeight;
+  short *ImpersonateOEMWeight_Mobius_Mark;
+  BeginAdversaryDecision *MakeDecision;
+  short *MakeDecision_Mobius_Mark;
+  double *TheDistributionParameters;
+
+  ReflashGatewayChipSuccessStep();
+  ~ReflashGatewayChipSuccessStep();
+  bool Enabled();
+  void LinkVariables();
+  double Weight();
+  bool ReactivationPredicate();
+  bool ReactivationFunction();
+  double SampleDistribution();
+  double* ReturnDistributionParameters();
+  double getCost();
+  double getOutcomeProbability();
+  double getDetection();
+  int Rank();
+  double timeDistributionParameter0();
+  bool preconditionsMet();
+  void executeEffects();
+}; // ReflashGatewayChipSuccessStep
 
 class DoNothingNothingStep : public Step {
 public:
@@ -694,10 +694,10 @@ public:
 
   Access *InternalCANAccess;
   short* InternalCANAccess_Mobius_Mark;
-  Access *CompromisedGatewayAccess;
-  short* CompromisedGatewayAccess_Mobius_Mark;
   Skill *SpoofingSkill;
   short* SpoofingSkill_Mobius_Mark;
+  Access *CompromisedGatewayAccess;
+  short* CompromisedGatewayAccess_Mobius_Mark;
   StepChosen *InjectMaliciousCANMessagesChosen;
   short *InjectMaliciousCANMessagesChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -743,10 +743,10 @@ public:
 
   Access *InternalCANAccess;
   short* InternalCANAccess_Mobius_Mark;
-  Access *CompromisedGatewayAccess;
-  short* CompromisedGatewayAccess_Mobius_Mark;
   Skill *SpoofingSkill;
   short* SpoofingSkill_Mobius_Mark;
+  Access *CompromisedGatewayAccess;
+  short* CompromisedGatewayAccess_Mobius_Mark;
   StepChosen *InjectMaliciousCANMessagesChosen;
   short *InjectMaliciousCANMessagesChosen_Mobius_Mark;
   StepWeight *ReflashGatewayChipWeight;
@@ -990,8 +990,8 @@ public:
   //List of user-specified state variables
   Access *InternalRemoteAccess;
   Access *ProximityNetworkAccess;
-  Access *CompromisedGatewayAccess;
   Access *RemoteNetworkAccess;
+  Access *CompromisedGatewayAccess;
   Access *InternalCANAccess;
   Knowledge *MessageFormatKnowledge;
   Knowledge *V2XProtocolKnowledge;
@@ -1021,8 +1021,8 @@ public:
   StepChosen *ExtractDataRemotelyChosen;
   StepChosen *ImpersonateOEMChosen;
   //List of attack steps
-  ReflashGatewayChipSuccessStep ReflashGatewayChipSuccess;
   ReflashGatewayChipFailureStep ReflashGatewayChipFailure;
+  ReflashGatewayChipSuccessStep ReflashGatewayChipSuccess;
   DoNothingNothingStep DoNothingNothing;
   ExtractDataViaCANBusSuccessStep ExtractDataViaCANBusSuccess;
   ExtractDataViaCANBusFailureStep ExtractDataViaCANBusFailure;

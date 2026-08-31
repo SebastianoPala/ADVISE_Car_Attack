@@ -14,8 +14,8 @@ CarADVISE::CarADVISE() {
   InjectMaliciousCANMessagesAD.setParent(this);
   ExtractDataRemotelyAD.setParent(this);
   ImpersonateOEMAD.setParent(this);
-  ReflashGatewayChipSuccess.setParent(this);
   ReflashGatewayChipFailure.setParent(this);
+  ReflashGatewayChipSuccess.setParent(this);
   DoNothingNothing.setParent(this);
   ExtractDataViaCANBusSuccess.setParent(this);
   ExtractDataViaCANBusFailure.setParent(this);
@@ -30,8 +30,8 @@ CarADVISE::CarADVISE() {
   ImpersonateOEMSuccess.setParent(this);
   ImpersonateOEMFailure.setParent(this);
   ReflashGatewayChipGroup.initialize(2, "ReflashGatewayChipGroup");
-  ReflashGatewayChipGroup.appendGroup((BaseGroupClass*) &ReflashGatewayChipSuccess);
   ReflashGatewayChipGroup.appendGroup((BaseGroupClass*) &ReflashGatewayChipFailure);
+  ReflashGatewayChipGroup.appendGroup((BaseGroupClass*) &ReflashGatewayChipSuccess);
 
   ExtractDataViaCANBusGroup.initialize(2, "ExtractDataViaCANBusGroup");
   ExtractDataViaCANBusGroup.appendGroup((BaseGroupClass*) &ExtractDataViaCANBusSuccess);
@@ -76,8 +76,8 @@ CarADVISE::CarADVISE() {
     &InjectMaliciousCANMessagesAD, // 5
     &ExtractDataRemotelyAD, // 6
     &ImpersonateOEMAD, // 7
-    &ReflashGatewayChipSuccess, // 8
-    &ReflashGatewayChipFailure, // 9
+    &ReflashGatewayChipFailure, // 8
+    &ReflashGatewayChipSuccess, // 9
     &DoNothingNothing, // 10
     &ExtractDataViaCANBusSuccess, // 11
     &ExtractDataViaCANBusFailure, // 12
@@ -94,8 +94,8 @@ CarADVISE::CarADVISE() {
   };
 
   Step* InitialSteps[15] = {
-      &ReflashGatewayChipSuccess,
       &ReflashGatewayChipFailure,
+      &ReflashGatewayChipSuccess,
       &DoNothingNothing,
       &ExtractDataViaCANBusSuccess,
       &ExtractDataViaCANBusFailure,
@@ -125,8 +125,8 @@ CarADVISE::CarADVISE() {
 
   InternalRemoteAccess = new Access("InternalRemoteAccess", 0);
   ProximityNetworkAccess = new Access("ProximityNetworkAccess", hasProximityNetworkAccess);
-  CompromisedGatewayAccess = new Access("CompromisedGatewayAccess", 0);
   RemoteNetworkAccess = new Access("RemoteNetworkAccess", hasRemoteNetworkAccess);
+  CompromisedGatewayAccess = new Access("CompromisedGatewayAccess", 0);
   InternalCANAccess = new Access("InternalCANAccess", 0);
   MessageFormatKnowledge = new Knowledge("MessageFormatKnowledge", hasMessageFormatKnowledge);
   V2XProtocolKnowledge = new Knowledge("V2XProtocolKnowledge", hasV2XProtocolKnowledge);
@@ -163,8 +163,8 @@ CarADVISE::CarADVISE() {
   ADVISEStateVariable* InitialSVs[31] = {
     InternalRemoteAccess, // 0
     ProximityNetworkAccess, // 1
-    CompromisedGatewayAccess, // 2
-    RemoteNetworkAccess, // 3
+    RemoteNetworkAccess, // 2
+    CompromisedGatewayAccess, // 3
     InternalCANAccess, // 4
     MessageFormatKnowledge, // 5
     V2XProtocolKnowledge, // 6
@@ -214,36 +214,36 @@ CarADVISE::CarADVISE() {
     {24,2}, {30,3}, {17,3}, {25,3}, {30,4}, {18,4}, {26,4}, {30,5}, 
     {19,5}, {27,5}, {30,6}, {20,6}, {28,6}, {30,7}, {21,7}, {29,7}, 
     {30,8}, {14,8}, {22,8}, {23,8}, {24,8}, {25,8}, {26,8}, {27,8}, 
-    {28,8}, {29,8}, {2,8}, {7,8}, {0,8}, {30,9}, {14,9}, {22,9}, 
-    {23,9}, {24,9}, {25,9}, {26,9}, {27,9}, {28,9}, {29,9}, {2,9}, 
+    {28,8}, {29,8}, {3,8}, {7,8}, {0,8}, {30,9}, {14,9}, {22,9}, 
+    {23,9}, {24,9}, {25,9}, {26,9}, {27,9}, {28,9}, {29,9}, {3,9}, 
     {7,9}, {0,9}, {30,10}, {15,10}, {22,10}, {23,10}, {24,10}, {25,10}, 
     {26,10}, {27,10}, {28,10}, {29,10}, {30,11}, {16,11}, {22,11}, {23,11}, 
     {24,11}, {25,11}, {26,11}, {27,11}, {28,11}, {29,11}, {13,11}, {4,11}, 
     {30,12}, {16,12}, {22,12}, {23,12}, {24,12}, {25,12}, {26,12}, {27,12}, 
     {28,12}, {29,12}, {13,12}, {4,12}, {30,13}, {17,13}, {22,13}, {23,13}, 
-    {24,13}, {25,13}, {26,13}, {27,13}, {28,13}, {29,13}, {2,13}, {1,13}, 
+    {24,13}, {25,13}, {26,13}, {27,13}, {28,13}, {29,13}, {3,13}, {1,13}, 
     {6,13}, {30,14}, {17,14}, {22,14}, {23,14}, {24,14}, {25,14}, {26,14}, 
-    {27,14}, {28,14}, {29,14}, {2,14}, {1,14}, {6,14}, {30,15}, {18,15}, 
+    {27,14}, {28,14}, {29,14}, {3,14}, {1,14}, {6,14}, {30,15}, {18,15}, 
     {22,15}, {23,15}, {24,15}, {25,15}, {26,15}, {27,15}, {28,15}, {29,15}, 
-    {0,15}, {3,15}, {5,15}, {30,16}, {18,16}, {22,16}, {23,16}, {24,16}, 
-    {25,16}, {26,16}, {27,16}, {28,16}, {29,16}, {0,16}, {3,16}, {5,16}, 
+    {0,15}, {2,15}, {5,15}, {30,16}, {18,16}, {22,16}, {23,16}, {24,16}, 
+    {25,16}, {26,16}, {27,16}, {28,16}, {29,16}, {0,16}, {2,16}, {5,16}, 
     {30,17}, {19,17}, {22,17}, {23,17}, {24,17}, {25,17}, {26,17}, {27,17}, 
-    {28,17}, {29,17}, {4,17}, {2,17}, {30,18}, {19,18}, {22,18}, {23,18}, 
-    {24,18}, {25,18}, {26,18}, {27,18}, {28,18}, {29,18}, {4,18}, {2,18}, 
+    {28,17}, {29,17}, {4,17}, {3,17}, {30,18}, {19,18}, {22,18}, {23,18}, 
+    {24,18}, {25,18}, {26,18}, {27,18}, {28,18}, {29,18}, {4,18}, {3,18}, 
     {30,19}, {20,19}, {22,19}, {23,19}, {24,19}, {25,19}, {26,19}, {27,19}, 
     {28,19}, {29,19}, {13,19}, {0,19}, {30,20}, {20,20}, {22,20}, {23,20}, 
     {24,20}, {25,20}, {26,20}, {27,20}, {28,20}, {29,20}, {13,20}, {0,20}, 
     {30,21}, {21,21}, {22,21}, {23,21}, {24,21}, {25,21}, {26,21}, {27,21}, 
-    {28,21}, {29,21}, {0,21}, {7,21}, {3,21}, {30,22}, {21,22}, {22,22}, 
+    {28,21}, {29,21}, {0,21}, {7,21}, {2,21}, {30,22}, {21,22}, {22,22}, 
     {23,22}, {24,22}, {25,22}, {26,22}, {27,22}, {28,22}, {29,22}, {0,22}, 
-    {7,22}, {3,22}
+    {7,22}, {2,22}
 };
   for(int n = 0; n < 210;n++)
     AddAffectArc(InitialSVs[AffectArcs[n][0]], InitialActions[AffectArcs[n][1]]);
   int EnableArcs[37][2] = {
     {30,0}, {30,1}, {30,2}, {30,3}, {30,4}, {30,5}, {30,6}, {30,7}, 
-    {14,8}, {2,8}, {14,9}, {2,9}, {15,10}, {16,11}, {13,11}, {16,12}, 
-    {13,12}, {17,13}, {2,13}, {17,14}, {2,14}, {18,15}, {0,15}, {18,16}, 
+    {14,8}, {3,8}, {14,9}, {3,9}, {15,10}, {16,11}, {13,11}, {16,12}, 
+    {13,12}, {17,13}, {3,13}, {17,14}, {3,14}, {18,15}, {0,15}, {18,16}, 
     {0,16}, {19,17}, {4,17}, {19,18}, {4,18}, {20,19}, {13,19}, {20,20}, 
     {13,20}, {21,21}, {0,21}, {21,22}, {0,22}
 };
@@ -263,24 +263,9 @@ CarADVISE::~CarADVISE() {
 }
 
 void CarADVISE::assignSVsToAttackSteps() {
-  ReflashGatewayChipSuccess.CompromisedGatewayAccess = CompromisedGatewayAccess;
-  ReflashGatewayChipSuccess.ChipFlashingSkill = ChipFlashingSkill;
-  ReflashGatewayChipSuccess.CarModelKnowledge = CarModelKnowledge;
-  ReflashGatewayChipSuccess.InternalRemoteAccess = InternalRemoteAccess;
-  ReflashGatewayChipSuccess.ReflashGatewayChipChosen = ReflashGatewayChipChosen;
-  ReflashGatewayChipSuccess.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
-  ReflashGatewayChipSuccess.DoNothingWeight = DoNothingWeight;
-  ReflashGatewayChipSuccess.ExtractDataViaCANBusWeight = ExtractDataViaCANBusWeight;
-  ReflashGatewayChipSuccess.SendV2XMaliciousMessagesWeight = SendV2XMaliciousMessagesWeight;
-  ReflashGatewayChipSuccess.InjectTamperedBinaryWeight = InjectTamperedBinaryWeight;
-  ReflashGatewayChipSuccess.InjectMaliciousCANMessagesWeight = InjectMaliciousCANMessagesWeight;
-  ReflashGatewayChipSuccess.ExtractDataRemotelyWeight = ExtractDataRemotelyWeight;
-  ReflashGatewayChipSuccess.ImpersonateOEMWeight = ImpersonateOEMWeight;
-  ReflashGatewayChipSuccess.MakeDecision = MakeDecision;
-  ReflashGatewayChipSuccess.setSVs(ReflashGatewayChipChosen, ReflashGatewayChipWeight);
   ReflashGatewayChipFailure.CompromisedGatewayAccess = CompromisedGatewayAccess;
-  ReflashGatewayChipFailure.ChipFlashingSkill = ChipFlashingSkill;
   ReflashGatewayChipFailure.CarModelKnowledge = CarModelKnowledge;
+  ReflashGatewayChipFailure.ChipFlashingSkill = ChipFlashingSkill;
   ReflashGatewayChipFailure.InternalRemoteAccess = InternalRemoteAccess;
   ReflashGatewayChipFailure.ReflashGatewayChipChosen = ReflashGatewayChipChosen;
   ReflashGatewayChipFailure.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
@@ -293,6 +278,21 @@ void CarADVISE::assignSVsToAttackSteps() {
   ReflashGatewayChipFailure.ImpersonateOEMWeight = ImpersonateOEMWeight;
   ReflashGatewayChipFailure.MakeDecision = MakeDecision;
   ReflashGatewayChipFailure.setSVs(ReflashGatewayChipChosen, ReflashGatewayChipWeight);
+  ReflashGatewayChipSuccess.CompromisedGatewayAccess = CompromisedGatewayAccess;
+  ReflashGatewayChipSuccess.CarModelKnowledge = CarModelKnowledge;
+  ReflashGatewayChipSuccess.ChipFlashingSkill = ChipFlashingSkill;
+  ReflashGatewayChipSuccess.InternalRemoteAccess = InternalRemoteAccess;
+  ReflashGatewayChipSuccess.ReflashGatewayChipChosen = ReflashGatewayChipChosen;
+  ReflashGatewayChipSuccess.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
+  ReflashGatewayChipSuccess.DoNothingWeight = DoNothingWeight;
+  ReflashGatewayChipSuccess.ExtractDataViaCANBusWeight = ExtractDataViaCANBusWeight;
+  ReflashGatewayChipSuccess.SendV2XMaliciousMessagesWeight = SendV2XMaliciousMessagesWeight;
+  ReflashGatewayChipSuccess.InjectTamperedBinaryWeight = InjectTamperedBinaryWeight;
+  ReflashGatewayChipSuccess.InjectMaliciousCANMessagesWeight = InjectMaliciousCANMessagesWeight;
+  ReflashGatewayChipSuccess.ExtractDataRemotelyWeight = ExtractDataRemotelyWeight;
+  ReflashGatewayChipSuccess.ImpersonateOEMWeight = ImpersonateOEMWeight;
+  ReflashGatewayChipSuccess.MakeDecision = MakeDecision;
+  ReflashGatewayChipSuccess.setSVs(ReflashGatewayChipChosen, ReflashGatewayChipWeight);
   DoNothingNothing.DoNothingChosen = DoNothingChosen;
   DoNothingNothing.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
   DoNothingNothing.DoNothingWeight = DoNothingWeight;
@@ -393,8 +393,8 @@ void CarADVISE::assignSVsToAttackSteps() {
   InjectTamperedBinaryFailure.MakeDecision = MakeDecision;
   InjectTamperedBinaryFailure.setSVs(InjectTamperedBinaryChosen, InjectTamperedBinaryWeight);
   InjectMaliciousCANMessagesSuccess.InternalCANAccess = InternalCANAccess;
-  InjectMaliciousCANMessagesSuccess.CompromisedGatewayAccess = CompromisedGatewayAccess;
   InjectMaliciousCANMessagesSuccess.SpoofingSkill = SpoofingSkill;
+  InjectMaliciousCANMessagesSuccess.CompromisedGatewayAccess = CompromisedGatewayAccess;
   InjectMaliciousCANMessagesSuccess.InjectMaliciousCANMessagesChosen = InjectMaliciousCANMessagesChosen;
   InjectMaliciousCANMessagesSuccess.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
   InjectMaliciousCANMessagesSuccess.DoNothingWeight = DoNothingWeight;
@@ -407,8 +407,8 @@ void CarADVISE::assignSVsToAttackSteps() {
   InjectMaliciousCANMessagesSuccess.MakeDecision = MakeDecision;
   InjectMaliciousCANMessagesSuccess.setSVs(InjectMaliciousCANMessagesChosen, InjectMaliciousCANMessagesWeight);
   InjectMaliciousCANMessagesFailure.InternalCANAccess = InternalCANAccess;
-  InjectMaliciousCANMessagesFailure.CompromisedGatewayAccess = CompromisedGatewayAccess;
   InjectMaliciousCANMessagesFailure.SpoofingSkill = SpoofingSkill;
+  InjectMaliciousCANMessagesFailure.CompromisedGatewayAccess = CompromisedGatewayAccess;
   InjectMaliciousCANMessagesFailure.InjectMaliciousCANMessagesChosen = InjectMaliciousCANMessagesChosen;
   InjectMaliciousCANMessagesFailure.ReflashGatewayChipWeight = ReflashGatewayChipWeight;
   InjectMaliciousCANMessagesFailure.DoNothingWeight = DoNothingWeight;
@@ -546,90 +546,6 @@ void CarADVISE::customInitialization() {
 /*                   Attack Step Definitions                     */
 /*****************************************************************/
 
-/*====================== ReflashGatewayChipSuccessStep ========================*/
-
-CarADVISE::ReflashGatewayChipSuccessStep::ReflashGatewayChipSuccessStep() {
-  TheDistributionParameters = new double[1];
-  commonInit("ReflashGatewayChipSuccessStep", 0, Deterministic, RaceEnabled, 14, 1, false);}
-
-CarADVISE::ReflashGatewayChipSuccessStep::~ReflashGatewayChipSuccessStep() {
-  delete[] TheDistributionParameters;
-}
-
-void CarADVISE::ReflashGatewayChipSuccessStep::LinkVariables() {
-  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
-  ChipFlashingSkill->Register(&ChipFlashingSkill_Mobius_Mark);
-  CarModelKnowledge->Register(&CarModelKnowledge_Mobius_Mark);
-  InternalRemoteAccess->Register(&InternalRemoteAccess_Mobius_Mark);
-  ReflashGatewayChipChosen->Register(&ReflashGatewayChipChosen_Mobius_Mark);
-  ReflashGatewayChipWeight->Register(&ReflashGatewayChipWeight_Mobius_Mark);
-  DoNothingWeight->Register(&DoNothingWeight_Mobius_Mark);
-  ExtractDataViaCANBusWeight->Register(&ExtractDataViaCANBusWeight_Mobius_Mark);
-  SendV2XMaliciousMessagesWeight->Register(&SendV2XMaliciousMessagesWeight_Mobius_Mark);
-  InjectTamperedBinaryWeight->Register(&InjectTamperedBinaryWeight_Mobius_Mark);
-  InjectMaliciousCANMessagesWeight->Register(&InjectMaliciousCANMessagesWeight_Mobius_Mark);
-  ExtractDataRemotelyWeight->Register(&ExtractDataRemotelyWeight_Mobius_Mark);
-  ImpersonateOEMWeight->Register(&ImpersonateOEMWeight_Mobius_Mark);
-  MakeDecision->Register(&MakeDecision_Mobius_Mark);
-
-}
-
-bool CarADVISE::ReflashGatewayChipSuccessStep::Enabled() {
-  OldEnabled = NewEnabled;
-  NewEnabled = (((*(ReflashGatewayChipChosen_Mobius_Mark)) >= 1));
-  return NewEnabled;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::timeDistributionParameter0() {
-return 9;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::Weight() {
-return 0.45;
-}
-
-bool CarADVISE::ReflashGatewayChipSuccessStep::ReactivationPredicate() {
-  return false;
-}
-
-bool CarADVISE::ReflashGatewayChipSuccessStep::ReactivationFunction() {
-  return false;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::SampleDistribution() {
-  return TheDistribution->Deterministic(timeDistributionParameter0());
-}
-
-double *CarADVISE::ReflashGatewayChipSuccessStep::ReturnDistributionParameters() {
-  TheDistributionParameters[0] = timeDistributionParameter0();
-  return TheDistributionParameters;
-}
-
-int CarADVISE::ReflashGatewayChipSuccessStep::Rank() {
-  return 1;
-}
-
-bool CarADVISE::ReflashGatewayChipSuccessStep::preconditionsMet() {
-return CompromisedGatewayAccess->Mark() == 0 && ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold && CarModelKnowledge->Mark() && InternalRemoteAccess->Mark();
-  return true;
-}
-
-void CarADVISE::ReflashGatewayChipSuccessStep::executeEffects() {
-InternalRemoteAccess->Mark() = true;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::getCost() {
-return reflashChipCost;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::getOutcomeProbability() {
-return 0.45;
-}
-
-double CarADVISE::ReflashGatewayChipSuccessStep::getDetection() {
-return 0.15;
-}
-
 /*====================== ReflashGatewayChipFailureStep ========================*/
 
 CarADVISE::ReflashGatewayChipFailureStep::ReflashGatewayChipFailureStep() {
@@ -642,8 +558,8 @@ CarADVISE::ReflashGatewayChipFailureStep::~ReflashGatewayChipFailureStep() {
 
 void CarADVISE::ReflashGatewayChipFailureStep::LinkVariables() {
   CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
-  ChipFlashingSkill->Register(&ChipFlashingSkill_Mobius_Mark);
   CarModelKnowledge->Register(&CarModelKnowledge_Mobius_Mark);
+  ChipFlashingSkill->Register(&ChipFlashingSkill_Mobius_Mark);
   InternalRemoteAccess->Register(&InternalRemoteAccess_Mobius_Mark);
   ReflashGatewayChipChosen->Register(&ReflashGatewayChipChosen_Mobius_Mark);
   ReflashGatewayChipWeight->Register(&ReflashGatewayChipWeight_Mobius_Mark);
@@ -694,7 +610,7 @@ int CarADVISE::ReflashGatewayChipFailureStep::Rank() {
 }
 
 bool CarADVISE::ReflashGatewayChipFailureStep::preconditionsMet() {
-return CompromisedGatewayAccess->Mark() == 0 && ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold && CarModelKnowledge->Mark() && InternalRemoteAccess->Mark();
+return CompromisedGatewayAccess->Mark() == 0 && InternalRemoteAccess->Mark() && CarModelKnowledge->Mark() && ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold;
   return true;
 }
 
@@ -711,7 +627,91 @@ return 0.55;
 }
 
 double CarADVISE::ReflashGatewayChipFailureStep::getDetection() {
-return 0.40;
+return 0.4;
+}
+
+/*====================== ReflashGatewayChipSuccessStep ========================*/
+
+CarADVISE::ReflashGatewayChipSuccessStep::ReflashGatewayChipSuccessStep() {
+  TheDistributionParameters = new double[1];
+  commonInit("ReflashGatewayChipSuccessStep", 0, Deterministic, RaceEnabled, 14, 1, false);}
+
+CarADVISE::ReflashGatewayChipSuccessStep::~ReflashGatewayChipSuccessStep() {
+  delete[] TheDistributionParameters;
+}
+
+void CarADVISE::ReflashGatewayChipSuccessStep::LinkVariables() {
+  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
+  CarModelKnowledge->Register(&CarModelKnowledge_Mobius_Mark);
+  ChipFlashingSkill->Register(&ChipFlashingSkill_Mobius_Mark);
+  InternalRemoteAccess->Register(&InternalRemoteAccess_Mobius_Mark);
+  ReflashGatewayChipChosen->Register(&ReflashGatewayChipChosen_Mobius_Mark);
+  ReflashGatewayChipWeight->Register(&ReflashGatewayChipWeight_Mobius_Mark);
+  DoNothingWeight->Register(&DoNothingWeight_Mobius_Mark);
+  ExtractDataViaCANBusWeight->Register(&ExtractDataViaCANBusWeight_Mobius_Mark);
+  SendV2XMaliciousMessagesWeight->Register(&SendV2XMaliciousMessagesWeight_Mobius_Mark);
+  InjectTamperedBinaryWeight->Register(&InjectTamperedBinaryWeight_Mobius_Mark);
+  InjectMaliciousCANMessagesWeight->Register(&InjectMaliciousCANMessagesWeight_Mobius_Mark);
+  ExtractDataRemotelyWeight->Register(&ExtractDataRemotelyWeight_Mobius_Mark);
+  ImpersonateOEMWeight->Register(&ImpersonateOEMWeight_Mobius_Mark);
+  MakeDecision->Register(&MakeDecision_Mobius_Mark);
+
+}
+
+bool CarADVISE::ReflashGatewayChipSuccessStep::Enabled() {
+  OldEnabled = NewEnabled;
+  NewEnabled = (((*(ReflashGatewayChipChosen_Mobius_Mark)) >= 1));
+  return NewEnabled;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::timeDistributionParameter0() {
+return 9;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::Weight() {
+return 0.45;
+}
+
+bool CarADVISE::ReflashGatewayChipSuccessStep::ReactivationPredicate() {
+  return false;
+}
+
+bool CarADVISE::ReflashGatewayChipSuccessStep::ReactivationFunction() {
+  return false;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::SampleDistribution() {
+  return TheDistribution->Deterministic(timeDistributionParameter0());
+}
+
+double *CarADVISE::ReflashGatewayChipSuccessStep::ReturnDistributionParameters() {
+  TheDistributionParameters[0] = timeDistributionParameter0();
+  return TheDistributionParameters;
+}
+
+int CarADVISE::ReflashGatewayChipSuccessStep::Rank() {
+  return 1;
+}
+
+bool CarADVISE::ReflashGatewayChipSuccessStep::preconditionsMet() {
+return CompromisedGatewayAccess->Mark() == 0 && InternalRemoteAccess->Mark() && CarModelKnowledge->Mark() && ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold;
+  return true;
+}
+
+void CarADVISE::ReflashGatewayChipSuccessStep::executeEffects() {
+CompromisedGatewayAccess->Mark() = true;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::getCost() {
+return reflashChipCost;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::getOutcomeProbability() {
+return 0.45;
+}
+
+double CarADVISE::ReflashGatewayChipSuccessStep::getDetection() {
+return 0.15;
 }
 
 /*====================== DoNothingNothingStep ========================*/
@@ -1308,8 +1308,8 @@ CarADVISE::InjectMaliciousCANMessagesSuccessStep::~InjectMaliciousCANMessagesSuc
 
 void CarADVISE::InjectMaliciousCANMessagesSuccessStep::LinkVariables() {
   InternalCANAccess->Register(&InternalCANAccess_Mobius_Mark);
-  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
   SpoofingSkill->Register(&SpoofingSkill_Mobius_Mark);
+  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
   InjectMaliciousCANMessagesChosen->Register(&InjectMaliciousCANMessagesChosen_Mobius_Mark);
   ReflashGatewayChipWeight->Register(&ReflashGatewayChipWeight_Mobius_Mark);
   DoNothingWeight->Register(&DoNothingWeight_Mobius_Mark);
@@ -1391,8 +1391,8 @@ CarADVISE::InjectMaliciousCANMessagesFailureStep::~InjectMaliciousCANMessagesFai
 
 void CarADVISE::InjectMaliciousCANMessagesFailureStep::LinkVariables() {
   InternalCANAccess->Register(&InternalCANAccess_Mobius_Mark);
-  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
   SpoofingSkill->Register(&SpoofingSkill_Mobius_Mark);
+  CompromisedGatewayAccess->Register(&CompromisedGatewayAccess_Mobius_Mark);
   InjectMaliciousCANMessagesChosen->Register(&InjectMaliciousCANMessagesChosen_Mobius_Mark);
   ReflashGatewayChipWeight->Register(&ReflashGatewayChipWeight_Mobius_Mark);
   DoNothingWeight->Register(&DoNothingWeight_Mobius_Mark);
@@ -1500,7 +1500,7 @@ return 3;
 }
 
 double CarADVISE::ExtractDataRemotelySuccessStep::Weight() {
-return 0.73;
+return 0.75;
 }
 
 bool CarADVISE::ExtractDataRemotelySuccessStep::ReactivationPredicate() {
@@ -1538,7 +1538,7 @@ return remoteExtractionCost;
 }
 
 double CarADVISE::ExtractDataRemotelySuccessStep::getOutcomeProbability() {
-return 0.73;
+return 0.75;
 }
 
 double CarADVISE::ExtractDataRemotelySuccessStep::getDetection() {
@@ -1709,7 +1709,7 @@ return 0.6;
 }
 
 double CarADVISE::ImpersonateOEMSuccessStep::getDetection() {
-return 0;
+return 0.4;
 }
 
 /*====================== ImpersonateOEMFailureStep ========================*/
