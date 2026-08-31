@@ -3,4 +3,37 @@
   <atomic key="Car">
     <value name="Car" type="ADVISE Model"/>
   </atomic>
+  <reward key="CarReward">
+    <value name="CarReward" category="Reward" type="Performance Variables Model"/>
+  </reward>
+  <study key="CarStudy">
+    <value name="CarStudy" category="Study" type="Range Study"/>
+  </study>
+  <solver key="CarSim">
+    <value name="CarSim" category="Solver" type="Simulator"/>
+  </solver>
+  <globalVariable name="hasProximityNetworkAccess" type="Bool"/>
+  <globalVariable name="hasRemoteNetworkAccess" type="Bool"/>
+  <globalVariable name="hasMessageFormatKnowledge" type="Bool"/>
+  <globalVariable name="hasCarModelKnowledge" type="Bool"/>
+  <globalVariable name="hasV2XProtocolKnowledge" type="Bool"/>
+  <globalVariable name="spoofingSkillLevel"/>
+  <globalVariable name="chipFlashingSkillLevel"/>
+  <globalVariable name="injectionSkillLevel"/>
+  <globalVariable name="v2XPacketCraftingSkillLevel"/>
+  <globalVariable name="dataExtractionSkillLevel"/>
+  <globalVariable name="v2XPacketCraftingSkillThreshold"/>
+  <globalVariable name="injectionSkillThreshold"/>
+  <globalVariable name="chipFlashingSkillThreshold"/>
+  <globalVariable name="remoteDataExtractionThreshold"/>
+  <globalVariable name="CANSpoofingSkillThreshold"/>
+  <globalVariable name="OEMSpoofingSkillThreshold"/>
+  <globalVariable name="maliciousV2XCost"/>
+  <globalVariable name="maliciousCANCost"/>
+  <globalVariable name="remoteExtractionCost"/>
+  <globalVariable name="reflashChipCost"/>
+  <globalVariable name="OEMImpersonationCost"/>
+  <globalVariable name="binaryInjectionCost"/>
+  <globalVariable name="CANExtractionCost"/>
+  <globalVariable name="CANDataExtractionSkillThreshold"/>
 </models:Project>
