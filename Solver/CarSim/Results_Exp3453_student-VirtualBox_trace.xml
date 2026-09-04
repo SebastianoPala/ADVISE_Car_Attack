@@ -91,41 +91,41 @@
 <V id="p2ReflashGatewayChipWeight" val="0" />
 <V id="p2DoNothingWeight" val="0" />
 <V id="p2ExtractDataViaCANBusWeight" val="0" />
-<V id="p2SendV2XMaliciousMessagesWeight" val="1" />
+<V id="p2SendV2XMaliciousMessagesWeight" val="0" />
 <V id="p2InjectTamperedBinaryWeight" val="0" />
 <V id="p2InjectMaliciousCANMessagesWeight" val="0" />
 <V id="p2ExtractDataRemotelyWeight" val="0" />
-<V id="p2ImpersonateOEMWeight" val="0" />
+<V id="p2ImpersonateOEMWeight" val="1" />
 <V id="p2MakeDecision" val="1" />
 </S>
-<A id="a20" t="0">
+<A id="a24" t="0">
   <V id="p2MakeDecision"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesChosen"  val="1" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
+  <V id="p2ImpersonateOEMChosen"  val="1" />
+  <V id="p2ImpersonateOEMWeight"  val="0" />
 </A>
-<A id="a7" t="3">
+<A id="a16" t="5">
   <V id="p2MakeDecision"  val="1" />
-  <V id="p2SendV2XMaliciousMessagesChosen"  val="0" />
-  <V id="p2ReflashGatewayChipWeight"  val="0" />
+  <V id="p2ImpersonateOEMChosen"  val="0" />
+  <V id="p2ReflashGatewayChipWeight"  val="1" />
   <V id="p2DoNothingWeight"  val="0" />
   <V id="p2ExtractDataViaCANBusWeight"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="1" />
+  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
   <V id="p2InjectTamperedBinaryWeight"  val="0" />
   <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
   <V id="p2ExtractDataRemotelyWeight"  val="0" />
   <V id="p2ImpersonateOEMWeight"  val="0" />
-  <V id="p2CompromisedGatewayAccess"  val="0" />
-  <V id="p2ProximityNetworkAccess"  val="1" />
-  <V id="p2V2xProtocolKnowledge"  val="1" />
+  <V id="p2InternalRemoteAccess"  val="1" />
+  <V id="p2RemoteNetworkAccess"  val="1" />
+  <V id="p2CarModelKnowledge"  val="1" />
 </A>
-<A id="a20" t="3">
+<A id="a17" t="5">
   <V id="p2MakeDecision"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesChosen"  val="1" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
+  <V id="p2ReflashGatewayChipChosen"  val="1" />
+  <V id="p2ReflashGatewayChipWeight"  val="0" />
 </A>
-<A id="a8" t="6">
+<A id="a3" t="10">
   <V id="p2MakeDecision"  val="1" />
-  <V id="p2SendV2XMaliciousMessagesChosen"  val="0" />
+  <V id="p2ReflashGatewayChipChosen"  val="0" />
   <V id="p2ReflashGatewayChipWeight"  val="0" />
   <V id="p2DoNothingWeight"  val="0" />
   <V id="p2ExtractDataViaCANBusWeight"  val="0" />
@@ -135,15 +135,15 @@
   <V id="p2ExtractDataRemotelyWeight"  val="0" />
   <V id="p2ImpersonateOEMWeight"  val="0" />
   <V id="p2CompromisedGatewayAccess"  val="1" />
-  <V id="p2ProximityNetworkAccess"  val="1" />
-  <V id="p2V2xProtocolKnowledge"  val="1" />
+  <V id="p2InternalRemoteAccess"  val="1" />
+  <V id="p2CarModelKnowledge"  val="1" />
 </A>
-<A id="a22" t="6">
+<A id="a22" t="10">
   <V id="p2MakeDecision"  val="0" />
   <V id="p2InjectMaliciousCANMessagesChosen"  val="1" />
   <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
 </A>
-<A id="a12" t="8">
+<A id="a12" t="12">
   <V id="p2MakeDecision"  val="1" />
   <V id="p2InjectMaliciousCANMessagesChosen"  val="0" />
   <V id="p2ReflashGatewayChipWeight"  val="0" />
@@ -157,12 +157,12 @@
   <V id="p2InternalCANAccess"  val="1" />
   <V id="p2CompromisedGatewayAccess"  val="1" />
 </A>
-<A id="a19" t="8">
+<A id="a19" t="12">
   <V id="p2MakeDecision"  val="0" />
   <V id="p2ExtractDataViaCANBusChosen"  val="1" />
   <V id="p2ExtractDataViaCANBusWeight"  val="0" />
 </A>
-<A id="a6" t="10">
+<A id="a6" t="14">
   <V id="p2MakeDecision"  val="1" />
   <V id="p2ExtractDataViaCANBusChosen"  val="0" />
   <V id="p2ReflashGatewayChipWeight"  val="0" />
@@ -175,74 +175,6 @@
   <V id="p2ImpersonateOEMWeight"  val="0" />
   <V id="p2StealPrivateData"  val="1" />
   <V id="p2InternalCANAccess"  val="1" />
-</A>
-<A id="a18" t="10">
-  <V id="p2MakeDecision"  val="0" />
-  <V id="p2DoNothingChosen"  val="1" />
-  <V id="p2DoNothingWeight"  val="0" />
-</A>
-<A id="a4" t="11">
-  <V id="p2MakeDecision"  val="1" />
-  <V id="p2DoNothingChosen"  val="0" />
-  <V id="p2ReflashGatewayChipWeight"  val="0" />
-  <V id="p2DoNothingWeight"  val="1" />
-  <V id="p2ExtractDataViaCANBusWeight"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
-  <V id="p2InjectTamperedBinaryWeight"  val="0" />
-  <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
-  <V id="p2ExtractDataRemotelyWeight"  val="0" />
-  <V id="p2ImpersonateOEMWeight"  val="0" />
-</A>
-<A id="a18" t="11">
-  <V id="p2MakeDecision"  val="0" />
-  <V id="p2DoNothingChosen"  val="1" />
-  <V id="p2DoNothingWeight"  val="0" />
-</A>
-<A id="a4" t="12">
-  <V id="p2MakeDecision"  val="1" />
-  <V id="p2DoNothingChosen"  val="0" />
-  <V id="p2ReflashGatewayChipWeight"  val="0" />
-  <V id="p2DoNothingWeight"  val="1" />
-  <V id="p2ExtractDataViaCANBusWeight"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
-  <V id="p2InjectTamperedBinaryWeight"  val="0" />
-  <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
-  <V id="p2ExtractDataRemotelyWeight"  val="0" />
-  <V id="p2ImpersonateOEMWeight"  val="0" />
-</A>
-<A id="a18" t="12">
-  <V id="p2MakeDecision"  val="0" />
-  <V id="p2DoNothingChosen"  val="1" />
-  <V id="p2DoNothingWeight"  val="0" />
-</A>
-<A id="a4" t="13">
-  <V id="p2MakeDecision"  val="1" />
-  <V id="p2DoNothingChosen"  val="0" />
-  <V id="p2ReflashGatewayChipWeight"  val="0" />
-  <V id="p2DoNothingWeight"  val="1" />
-  <V id="p2ExtractDataViaCANBusWeight"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
-  <V id="p2InjectTamperedBinaryWeight"  val="0" />
-  <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
-  <V id="p2ExtractDataRemotelyWeight"  val="0" />
-  <V id="p2ImpersonateOEMWeight"  val="0" />
-</A>
-<A id="a18" t="13">
-  <V id="p2MakeDecision"  val="0" />
-  <V id="p2DoNothingChosen"  val="1" />
-  <V id="p2DoNothingWeight"  val="0" />
-</A>
-<A id="a4" t="14">
-  <V id="p2MakeDecision"  val="1" />
-  <V id="p2DoNothingChosen"  val="0" />
-  <V id="p2ReflashGatewayChipWeight"  val="0" />
-  <V id="p2DoNothingWeight"  val="1" />
-  <V id="p2ExtractDataViaCANBusWeight"  val="0" />
-  <V id="p2SendV2XMaliciousMessagesWeight"  val="0" />
-  <V id="p2InjectTamperedBinaryWeight"  val="0" />
-  <V id="p2InjectMaliciousCANMessagesWeight"  val="0" />
-  <V id="p2ExtractDataRemotelyWeight"  val="0" />
-  <V id="p2ImpersonateOEMWeight"  val="0" />
 </A>
 <A id="a18" t="14">
   <V id="p2MakeDecision"  val="0" />
