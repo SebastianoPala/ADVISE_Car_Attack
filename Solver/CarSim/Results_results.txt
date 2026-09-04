@@ -1,5 +1,5 @@
 _______________________________Simulator Results______________________________
-Date:                        Fri Jul 03 13:22:46 CEST 2026
+Date:                        Fri Sep 04 12:28:42 CEST 2026
 
 ____________________________Simulator Configuration___________________________
 Simulation Type:             Terminating
@@ -22,20 +22,19 @@ Maximize Processor Usage:    true
 Processors Selected for Simulation: 
         student-VirtualBox   amd64
 
-________________________________Experiment 2280_______________________________
-Start Time:                  Fri Jul 03 13:22:40 CEST 2026
-Finish Time:                 Fri Jul 03 13:22:41 CEST 2026
-Elapsed Running Time:        1.665
-Total CPU Time:              1.24999
+________________________________Experiment 3419_______________________________
+Start Time:                  Fri Sep 04 12:28:12 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:20 CEST 2026
+Elapsed Running Time:        7.602
+Total CPU Time:              1.3077839999999998
 Batches Completed:           1000
-Experiment Name:             Experiment 2280
+Experiment Name:             Experiment 3419
 Global Variable Settings:    
-        short                CANExtractionCost        2                      
         short                CANExtractionSkillThreshold  250                    
-        short                CANExtractionTime        2                      
         short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
         short                OEMSpoofingSkillThreshold  450                    
-        short                chipFlashingSkillLevel   1000                   
+        short                chipFlashingSkillLevel   750                    
         short                chipFlashingSkillThreshold  700                    
         short                dataExtractionSkillLevel  1000                   
         bool                 hasCarModelKnowledge     1                      
@@ -45,206 +44,6 @@ Global Variable Settings:
         bool                 hasV2XProtocolKnowledge  1                      
         short                injectionSkillLevel      1000                   
         short                injectionSkillThreshold  500                    
-        short                maliciousCANMessagesCost  1                      
-        short                maliciousCANMessagesTime  2                      
-        short                maliciousV2XMessagesCost  2                      
-        short                maliciousV2XMessagesTime  3                      
-        short                remoteExtractionSkillThreshold  300                    
-        short                spoofingSkillLevel       1000                   
-        short                v2XPacketCraftingSkillLevel  1000                   
-        short                v2XPacketCraftingSkillThreshold  300                    
-
-
-_________________________________Mean Results_________________________________
-Name                  Time               Mean                     Confidence Interval
-StealData             0.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             1.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             2.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             3.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             4.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             5.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             6.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             10.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             11.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             12.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             13.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             14.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             15.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             16.0              7.5900000000E-01  +/-   2.6521784168E-02
-StealData             17.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             18.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             19.0              9.0300000000E-01  +/-   1.8352831172E-02
-StealData             20.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             21.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             22.0              9.4200000000E-01  +/-   1.4494818293E-02
-StealData             23.0              9.5400000000E-01  +/-   1.2990516846E-02
-StealData             24.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             25.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             26.0              9.8300000000E-01  +/-   8.0163107998E-03
-StealData             27.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             28.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             29.0              9.8900000000E-01  +/-   6.4679673006E-03
-StealData             30.0              9.9000000000E-01  +/-   6.1700818398E-03
-StealData             31.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             32.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             33.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             34.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             35.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             36.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             37.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             38.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             39.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             40.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             41.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             42.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             43.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             44.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             45.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             46.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             47.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             48.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             49.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             50.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             51.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             52.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             53.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             54.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             55.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             56.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             57.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             58.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             59.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             60.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             61.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             62.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             63.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             64.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             65.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             66.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             67.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             68.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             69.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             70.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             71.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             72.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             73.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             74.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             75.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             76.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             77.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             78.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             79.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             80.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             81.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             82.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             83.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             84.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             85.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             86.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             87.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             88.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             89.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             90.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             91.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             92.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             93.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             94.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             95.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             96.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             97.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             98.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             99.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             100.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             101.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             102.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             103.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             104.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             105.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             106.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             107.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             108.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             109.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             110.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             111.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             112.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             113.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             114.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             115.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             116.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             117.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             118.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             119.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             120.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             121.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             122.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             123.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             124.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             125.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             126.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             127.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             128.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             129.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             130.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             131.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             132.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             133.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             134.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             135.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             136.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             137.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             138.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             139.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             140.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             141.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             142.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             143.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             144.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             145.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             146.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             147.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             148.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             149.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             150.0             1.0000000000E00   +/-   0.0000000000E00 
-
-
-_______________________________Variance Results_______________________________
-
-
-_______________________________Interval Results_______________________________
-
-
-_____________________________Distribution Results_____________________________
-
-________________________________Experiment 2302_______________________________
-Start Time:                  Fri Jul 03 13:22:41 CEST 2026
-Finish Time:                 Fri Jul 03 13:22:43 CEST 2026
-Elapsed Running Time:        1.746
-Total CPU Time:              1.324953
-Batches Completed:           1000
-Experiment Name:             Experiment 2302
-Global Variable Settings:    
-        short                CANExtractionCost        2                      
-        short                CANExtractionSkillThreshold  250                    
-        short                CANExtractionTime        2                      
-        short                CANSpoofingSkillThreshold  350                    
-        short                OEMSpoofingSkillThreshold  450                    
-        short                chipFlashingSkillLevel   1000                   
-        short                chipFlashingSkillThreshold  700                    
-        short                dataExtractionSkillLevel  275                    
-        bool                 hasCarModelKnowledge     1                      
-        bool                 hasMessageFormatKnowledge  1                      
-        bool                 hasProximityAccess       1                      
-        bool                 hasRemoteNetworkAccess   1                      
-        bool                 hasV2XProtocolKnowledge  1                      
-        short                injectionSkillLevel      1000                   
-        short                injectionSkillThreshold  500                    
-        short                maliciousCANMessagesCost  1                      
-        short                maliciousCANMessagesTime  2                      
-        short                maliciousV2XMessagesCost  2                      
-        short                maliciousV2XMessagesTime  3                      
         short                remoteExtractionSkillThreshold  300                    
         short                spoofingSkillLevel       1000                   
         short                v2XPacketCraftingSkillLevel  1000                   
@@ -414,18 +213,590 @@ _______________________________Interval Results_______________________________
 
 _____________________________Distribution Results_____________________________
 
-________________________________Experiment 2303_______________________________
-Start Time:                  Fri Jul 03 13:22:43 CEST 2026
-Finish Time:                 Fri Jul 03 13:22:45 CEST 2026
-Elapsed Running Time:        1.625
-Total CPU Time:              1.1695840000000002
+________________________________Experiment 3420_______________________________
+Start Time:                  Fri Sep 04 12:28:20 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:28 CEST 2026
+Elapsed Running Time:        7.606
+Total CPU Time:              1.3141960000000001
 Batches Completed:           1000
-Experiment Name:             Experiment 2303
+Experiment Name:             Experiment 3420
 Global Variable Settings:    
-        short                CANExtractionCost        2                      
         short                CANExtractionSkillThreshold  250                    
-        short                CANExtractionTime        2                      
         short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
+        short                OEMSpoofingSkillThreshold  450                    
+        short                chipFlashingSkillLevel   1000                   
+        short                chipFlashingSkillThreshold  700                    
+        short                dataExtractionSkillLevel  1000                   
+        bool                 hasCarModelKnowledge     1                      
+        bool                 hasMessageFormatKnowledge  1                      
+        bool                 hasProximityAccess       0                      
+        bool                 hasRemoteNetworkAccess   1                      
+        bool                 hasV2XProtocolKnowledge  1                      
+        short                injectionSkillLevel      1000                   
+        short                injectionSkillThreshold  500                    
+        short                remoteExtractionSkillThreshold  300                    
+        short                spoofingSkillLevel       1000                   
+        short                v2XPacketCraftingSkillLevel  1000                   
+        short                v2XPacketCraftingSkillThreshold  300                    
+
+
+_________________________________Mean Results_________________________________
+Name                  Time               Mean                     Confidence Interval
+StealData             0.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             1.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             2.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             3.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             4.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             5.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             6.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
+
+
+_______________________________Variance Results_______________________________
+
+
+_______________________________Interval Results_______________________________
+
+
+_____________________________Distribution Results_____________________________
+
+________________________________Experiment 3452_______________________________
+Start Time:                  Fri Sep 04 12:28:28 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:34 CEST 2026
+Elapsed Running Time:        6.344
+Total CPU Time:              1.3950989999999999
+Batches Completed:           1000
+Experiment Name:             Experiment 3452
+Global Variable Settings:    
+        short                CANExtractionSkillThreshold  250                    
+        short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
+        short                OEMSpoofingSkillThreshold  450                    
+        short                chipFlashingSkillLevel   750                    
+        short                chipFlashingSkillThreshold  700                    
+        short                dataExtractionSkillLevel  275                    
+        bool                 hasCarModelKnowledge     1                      
+        bool                 hasMessageFormatKnowledge  1                      
+        bool                 hasProximityAccess       1                      
+        bool                 hasRemoteNetworkAccess   1                      
+        bool                 hasV2XProtocolKnowledge  1                      
+        short                injectionSkillLevel      1000                   
+        short                injectionSkillThreshold  500                    
+        short                remoteExtractionSkillThreshold  300                    
+        short                spoofingSkillLevel       1000                   
+        short                v2XPacketCraftingSkillLevel  1000                   
+        short                v2XPacketCraftingSkillThreshold  300                    
+
+
+_________________________________Mean Results_________________________________
+Name                  Time               Mean                     Confidence Interval
+StealData             0.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             1.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             2.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             3.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             4.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             5.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             6.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
+
+
+_______________________________Variance Results_______________________________
+
+
+_______________________________Interval Results_______________________________
+
+
+_____________________________Distribution Results_____________________________
+
+________________________________Experiment 3453_______________________________
+Start Time:                  Fri Sep 04 12:28:34 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:36 CEST 2026
+Elapsed Running Time:        2.132
+Total CPU Time:              1.505571
+Batches Completed:           1000
+Experiment Name:             Experiment 3453
+Global Variable Settings:    
+        short                CANExtractionSkillThreshold  250                    
+        short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
+        short                OEMSpoofingSkillThreshold  450                    
+        short                chipFlashingSkillLevel   1000                   
+        short                chipFlashingSkillThreshold  700                    
+        short                dataExtractionSkillLevel  275                    
+        bool                 hasCarModelKnowledge     1                      
+        bool                 hasMessageFormatKnowledge  1                      
+        bool                 hasProximityAccess       1                      
+        bool                 hasRemoteNetworkAccess   1                      
+        bool                 hasV2XProtocolKnowledge  1                      
+        short                injectionSkillLevel      1000                   
+        short                injectionSkillThreshold  500                    
+        short                remoteExtractionSkillThreshold  300                    
+        short                spoofingSkillLevel       1000                   
+        short                v2XPacketCraftingSkillLevel  1000                   
+        short                v2XPacketCraftingSkillThreshold  300                    
+
+
+_________________________________Mean Results_________________________________
+Name                  Time               Mean                     Confidence Interval
+StealData             0.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             1.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             2.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             3.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             4.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             5.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             6.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
+
+
+_______________________________Variance Results_______________________________
+
+
+_______________________________Interval Results_______________________________
+
+
+_____________________________Distribution Results_____________________________
+
+________________________________Experiment 3454_______________________________
+Start Time:                  Fri Sep 04 12:28:36 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:38 CEST 2026
+Elapsed Running Time:        1.747
+Total CPU Time:              1.4979680000000002
+Batches Completed:           1000
+Experiment Name:             Experiment 3454
+Global Variable Settings:    
+        short                CANExtractionSkillThreshold  250                    
+        short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
         short                OEMSpoofingSkillThreshold  450                    
         short                chipFlashingSkillLevel   0                      
         short                chipFlashingSkillThreshold  700                    
@@ -437,10 +808,6 @@ Global Variable Settings:
         bool                 hasV2XProtocolKnowledge  1                      
         short                injectionSkillLevel      1000                   
         short                injectionSkillThreshold  500                    
-        short                maliciousCANMessagesCost  1                      
-        short                maliciousCANMessagesTime  2                      
-        short                maliciousV2XMessagesCost  2                      
-        short                maliciousV2XMessagesTime  3                      
         short                remoteExtractionSkillThreshold  300                    
         short                spoofingSkillLevel       1000                   
         short                v2XPacketCraftingSkillLevel  1000                   
@@ -459,147 +826,147 @@ StealData             6.0               0.0000000000E00   +/-   0.0000000000E00
 StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
 StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
 StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             10.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             11.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             12.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             13.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             14.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             15.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             16.0              7.5900000000E-01  +/-   2.6521784168E-02
-StealData             17.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             18.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             19.0              9.0300000000E-01  +/-   1.8352831172E-02
-StealData             20.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             21.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             22.0              9.4200000000E-01  +/-   1.4494818293E-02
-StealData             23.0              9.5400000000E-01  +/-   1.2990516846E-02
-StealData             24.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             25.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             26.0              9.8300000000E-01  +/-   8.0163107998E-03
-StealData             27.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             28.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             29.0              9.8900000000E-01  +/-   6.4679673006E-03
-StealData             30.0              9.9000000000E-01  +/-   6.1700818398E-03
-StealData             31.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             32.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             33.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             34.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             35.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             36.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             37.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             38.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             39.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             40.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             41.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             42.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             43.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             44.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             45.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             46.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             47.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             48.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             49.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             50.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             51.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             52.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             53.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             54.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             55.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             56.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             57.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             58.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             59.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             60.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             61.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             62.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             63.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             64.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             65.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             66.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             67.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             68.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             69.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             70.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             71.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             72.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             73.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             74.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             75.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             76.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             77.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             78.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             79.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             80.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             81.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             82.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             83.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             84.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             85.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             86.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             87.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             88.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             89.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             90.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             91.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             92.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             93.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             94.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             95.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             96.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             97.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             98.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             99.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             100.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             101.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             102.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             103.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             104.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             105.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             106.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             107.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             108.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             109.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             110.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             111.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             112.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             113.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             114.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             115.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             116.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             117.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             118.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             119.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             120.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             121.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             122.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             123.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             124.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             125.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             126.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             127.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             128.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             129.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             130.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             131.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             132.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             133.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             134.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             135.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             136.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             137.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             138.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             139.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             140.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             141.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             142.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             143.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             144.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             145.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             146.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             147.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             148.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             149.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             150.0             1.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
 
 
 _______________________________Variance Results_______________________________
@@ -610,18 +977,208 @@ _______________________________Interval Results_______________________________
 
 _____________________________Distribution Results_____________________________
 
-________________________________Experiment 2304_______________________________
-Start Time:                  Fri Jul 03 13:22:45 CEST 2026
-Finish Time:                 Fri Jul 03 13:22:46 CEST 2026
-Elapsed Running Time:        1.566
-Total CPU Time:              1.351293
+________________________________Experiment 3455_______________________________
+Start Time:                  Fri Sep 04 12:28:38 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:40 CEST 2026
+Elapsed Running Time:        1.698
+Total CPU Time:              1.313264
 Batches Completed:           1000
-Experiment Name:             Experiment 2304
+Experiment Name:             Experiment 3455
 Global Variable Settings:    
-        short                CANExtractionCost        2                      
         short                CANExtractionSkillThreshold  250                    
-        short                CANExtractionTime        2                      
         short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
+        short                OEMSpoofingSkillThreshold  450                    
+        short                chipFlashingSkillLevel   750                    
+        short                chipFlashingSkillThreshold  700                    
+        short                dataExtractionSkillLevel  1000                   
+        bool                 hasCarModelKnowledge     1                      
+        bool                 hasMessageFormatKnowledge  1                      
+        bool                 hasProximityAccess       1                      
+        bool                 hasRemoteNetworkAccess   1                      
+        bool                 hasV2XProtocolKnowledge  1                      
+        short                injectionSkillLevel      1000                   
+        short                injectionSkillThreshold  500                    
+        short                remoteExtractionSkillThreshold  300                    
+        short                spoofingSkillLevel       1000                   
+        short                v2XPacketCraftingSkillLevel  1000                   
+        short                v2XPacketCraftingSkillThreshold  300                    
+
+
+_________________________________Mean Results_________________________________
+Name                  Time               Mean                     Confidence Interval
+StealData             0.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             1.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             2.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             3.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             4.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             5.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             6.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
+
+
+_______________________________Variance Results_______________________________
+
+
+_______________________________Interval Results_______________________________
+
+
+_____________________________Distribution Results_____________________________
+
+________________________________Experiment 3456_______________________________
+Start Time:                  Fri Sep 04 12:28:40 CEST 2026
+Finish Time:                 Fri Sep 04 12:28:41 CEST 2026
+Elapsed Running Time:        1.723
+Total CPU Time:              1.2652759999999998
+Batches Completed:           1000
+Experiment Name:             Experiment 3456
+Global Variable Settings:    
+        short                CANExtractionSkillThreshold  250                    
+        short                CANSpoofingSkillThreshold  350                    
+        short                FlashingSkillExpertise   800                    
         short                OEMSpoofingSkillThreshold  450                    
         short                chipFlashingSkillLevel   1000                   
         short                chipFlashingSkillThreshold  700                    
@@ -633,10 +1190,6 @@ Global Variable Settings:
         bool                 hasV2XProtocolKnowledge  1                      
         short                injectionSkillLevel      1000                   
         short                injectionSkillThreshold  500                    
-        short                maliciousCANMessagesCost  1                      
-        short                maliciousCANMessagesTime  2                      
-        short                maliciousV2XMessagesCost  2                      
-        short                maliciousV2XMessagesTime  3                      
         short                remoteExtractionSkillThreshold  300                    
         short                spoofingSkillLevel       1000                   
         short                v2XPacketCraftingSkillLevel  1000                   
@@ -655,147 +1208,147 @@ StealData             6.0               0.0000000000E00   +/-   0.0000000000E00
 StealData             7.0               0.0000000000E00   +/-   0.0000000000E00 
 StealData             8.0               0.0000000000E00   +/-   0.0000000000E00 
 StealData             9.0               0.0000000000E00   +/-   0.0000000000E00 
-StealData             10.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             11.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             12.0              5.7300000000E-01  +/-   3.0673587703E-02
-StealData             13.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             14.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             15.0              7.1400000000E-01  +/-   2.8022407851E-02
-StealData             16.0              7.5900000000E-01  +/-   2.6521784168E-02
-StealData             17.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             18.0              8.9200000000E-01  +/-   1.9247203237E-02
-StealData             19.0              9.0300000000E-01  +/-   1.8352831172E-02
-StealData             20.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             21.0              9.3900000000E-01  +/-   1.4841269139E-02
-StealData             22.0              9.4200000000E-01  +/-   1.4494818293E-02
-StealData             23.0              9.5400000000E-01  +/-   1.2990516846E-02
-StealData             24.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             25.0              9.8200000000E-01  +/-   8.2445190092E-03
-StealData             26.0              9.8300000000E-01  +/-   8.0163107998E-03
-StealData             27.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             28.0              9.8800000000E-01  +/-   6.7521553004E-03
-StealData             29.0              9.8900000000E-01  +/-   6.4679673006E-03
-StealData             30.0              9.9000000000E-01  +/-   6.1700818398E-03
-StealData             31.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             32.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             33.0              9.9500000000E-01  +/-   4.3739102747E-03
-StealData             34.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             35.0              9.9600000000E-01  +/-   3.9141096886E-03
-StealData             36.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             37.0              9.9700000000E-01  +/-   3.3914196625E-03
-StealData             38.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             39.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             40.0              9.9900000000E-01  +/-   1.9600000000E-03
-StealData             41.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             42.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             43.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             44.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             45.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             46.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             47.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             48.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             49.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             50.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             51.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             52.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             53.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             54.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             55.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             56.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             57.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             58.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             59.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             60.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             61.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             62.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             63.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             64.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             65.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             66.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             67.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             68.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             69.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             70.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             71.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             72.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             73.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             74.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             75.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             76.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             77.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             78.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             79.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             80.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             81.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             82.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             83.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             84.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             85.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             86.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             87.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             88.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             89.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             90.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             91.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             92.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             93.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             94.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             95.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             96.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             97.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             98.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             99.0              1.0000000000E00   +/-   0.0000000000E00 
-StealData             100.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             101.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             102.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             103.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             104.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             105.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             106.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             107.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             108.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             109.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             110.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             111.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             112.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             113.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             114.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             115.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             116.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             117.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             118.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             119.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             120.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             121.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             122.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             123.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             124.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             125.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             126.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             127.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             128.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             129.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             130.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             131.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             132.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             133.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             134.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             135.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             136.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             137.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             138.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             139.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             140.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             141.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             142.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             143.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             144.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             145.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             146.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             147.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             148.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             149.0             1.0000000000E00   +/-   0.0000000000E00 
-StealData             150.0             1.0000000000E00   +/-   0.0000000000E00 
+StealData             10.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             11.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             12.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             13.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             14.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             15.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             16.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             17.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             18.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             19.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             20.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             21.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             22.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             23.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             24.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             25.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             26.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             27.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             28.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             29.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             30.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             31.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             32.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             33.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             34.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             35.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             36.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             37.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             38.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             39.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             40.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             41.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             42.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             43.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             44.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             45.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             46.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             47.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             48.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             49.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             50.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             51.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             52.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             53.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             54.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             55.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             56.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             57.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             58.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             59.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             60.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             61.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             62.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             63.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             64.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             65.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             66.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             67.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             68.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             69.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             70.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             71.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             72.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             73.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             74.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             75.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             76.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             77.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             78.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             79.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             80.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             81.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             82.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             83.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             84.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             85.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             86.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             87.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             88.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             89.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             90.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             91.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             92.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             93.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             94.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             95.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             96.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             97.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             98.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             99.0              0.0000000000E00   +/-   0.0000000000E00 
+StealData             100.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             101.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             102.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             103.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             104.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             105.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             106.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             107.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             108.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             109.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             110.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             111.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             112.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             113.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             114.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             115.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             116.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             117.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             118.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             119.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             120.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             121.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             122.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             123.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             124.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             125.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             126.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             127.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             128.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             129.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             130.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             131.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             132.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             133.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             134.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             135.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             136.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             137.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             138.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             139.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             140.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             141.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             142.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             143.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             144.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             145.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             146.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             147.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             148.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             149.0             0.0000000000E00   +/-   0.0000000000E00 
+StealData             150.0             0.0000000000E00   +/-   0.0000000000E00 
 
 
 _______________________________Variance Results_______________________________

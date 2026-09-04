@@ -258,53 +258,11 @@ def stampa_report(traces, var_obiettivo, mostra_tutti):
                 tempi[0], mediana, tempi[-1]))
 
     extra = trova_metadati_extra(validi, var_obiettivo)
-    if extra:
-        print("\nMetadati extra rilevati (variabili non di profilo/meccanica "
-              "il cui valore finale cambia tra le run): " + ", ".join(extra))
-    else:
-        print("\nNessun metadato extra (tipo Detectability/Cost/Risk) trovato: "
-              "il modello non ne dichiara, o e' costante in tutte le run.")
 
     stampa_dettaglio_per_esperimento(validi, mostra_tutti, extra)
+    print()
+    print()
 
-    print("\n=== PERCORSI DISTINTI ===")
-    campo = "percorso_completo" if mostra_tutti else "percorso"
-    conteggio = Counter(getattr(t, campo) for t in validi)
-    for percorso, n in conteggio.most_common():
-        etichetta = " -> ".join(percorso) if percorso else "(nessuno step riuscito)"
-        print("{0:5d}  {1:6.1%}  {2}".format(n, n / len(validi), etichetta))
-
-    print("\n=== FREQUENZA DEI SINGOLI STEP ===")
-    usi = Counter()
-    fallimenti = Counter()
-    for t in validi:
-        for s in set(getattr(t, campo)):
-            usi[s] += 1
-        for s, _ in t.falliti:
-            fallimenti[s] += 1
-    for step in sorted(set(usi) | set(fallimenti)):
-        print("  {0:35s} riuscito in {1:4d} run   tentativi falliti: {2:4d}".format(
-            step, usi[step], fallimenti[step]))
-
-    # Le capacita' dell'avversario che cambiano tra i file spiegano
-    # perche' vengono scelti percorsi diversi.
-    varianti = defaultdict(set)
-    for t in validi:
-        for k, v in t.profilo.items():
-            varianti[k].add(v)
-    discriminanti = set(k for k, vals in varianti.items() if len(vals) > 1)
-    if discriminanti:
-        print("\n=== PROFILO x PERCORSO (solo variabili che cambiano tra i file) ===")
-        for k in sorted(discriminanti):
-            per_valore = defaultdict(Counter)
-            for t in validi:
-                per_valore[t.profilo.get(k)][getattr(t, campo)] += 1
-            print("\n  {0}:".format(k))
-            for val, c in sorted(per_valore.items(), key=lambda x: str(x[0])):
-                principale, n = c.most_common(1)[0]
-                etichetta = " -> ".join(principale) if principale else "(nessuno)"
-                print("    = {0:6s}  {1:4d} run, percorso dominante: {2} ({3})".format(
-                    str(val), sum(c.values()), etichetta, n))
 
 
 def esporta_csv(traces, destinazione, mostra_tutti, var_obiettivo):

@@ -12,12 +12,8 @@
   <solver key="CarSim">
     <value name="CarSim" category="Solver" type="Simulator"/>
   </solver>
-  <globalVariable name="maliciousV2XMessagesCost"/>
-  <globalVariable name="maliciousV2XMessagesTime"/>
   <globalVariable name="v2XPacketCraftingSkillThreshold"/>
   <globalVariable name="v2XPacketCraftingSkillLevel"/>
-  <globalVariable name="maliciousCANMessagesCost"/>
-  <globalVariable name="maliciousCANMessagesTime"/>
   <globalVariable name="hasProximityAccess" type="Bool"/>
   <globalVariable name="hasRemoteNetworkAccess" type="Bool"/>
   <globalVariable name="hasV2XProtocolKnowledge" type="Bool"/>
@@ -33,6 +29,5 @@
   <globalVariable name="remoteExtractionSkillThreshold"/>
   <globalVariable name="injectionSkillThreshold"/>
   <globalVariable name="chipFlashingSkillThreshold"/>
-  <globalVariable name="CANExtractionCost"/>
-  <globalVariable name="CANExtractionTime"/>
+  <globalVariable name="FlashingSkillExpertise"/>
 </models:Project>

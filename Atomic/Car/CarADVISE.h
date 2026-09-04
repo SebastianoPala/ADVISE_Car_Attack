@@ -17,12 +17,8 @@
 #include "Cpp/BaseClasses/atomic/advise/StepWeight.h"
 #include <limits.h>
 #include <cmath>
-extern Short maliciousV2XMessagesCost;
-extern Short maliciousV2XMessagesTime;
 extern Short v2XPacketCraftingSkillThreshold;
 extern Short v2XPacketCraftingSkillLevel;
-extern Short maliciousCANMessagesCost;
-extern Short maliciousCANMessagesTime;
 extern Bool hasProximityAccess;
 extern Bool hasRemoteNetworkAccess;
 extern Bool hasV2XProtocolKnowledge;
@@ -38,8 +34,7 @@ extern Short CANExtractionSkillThreshold;
 extern Short remoteExtractionSkillThreshold;
 extern Short injectionSkillThreshold;
 extern Short chipFlashingSkillThreshold;
-extern Short CANExtractionCost;
-extern Short CANExtractionTime;
+extern Short FlashingSkillExpertise;
 extern UserDistributions* TheDistribution;
 
 /*********************************************************************

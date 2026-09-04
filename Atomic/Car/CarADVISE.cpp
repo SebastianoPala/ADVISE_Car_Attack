@@ -198,11 +198,11 @@ CarADVISE::CarADVISE() {
 
   commonInit("Car", 31, InitialSVs, 23, InitialActions, 9, InitialGroups, 8, outCounts, InitialSteps, 1, InitialGoals);
 
-  advCostPref = 0.1;
+  advCostPref = 0.4;
   advDetectPref = 0.1;
-  advPayPref = 0.8;
+  advPayPref = 0.5;
 
-  planningHorizon = 5;
+  planningHorizon = 4;
   costDiscount = 1.0;
   detectionDiscount = 1.0;
   payoffDiscount = 1.0;
@@ -581,7 +581,10 @@ bool CarADVISE::ReflashGatewayChipFailureStep::Enabled() {
 }
 
 double CarADVISE::ReflashGatewayChipFailureStep::timeDistributionParameter0() {
-return 9;
+if(ChipFlashingSkill->Mark() < FlashingSkillExpertise)
+			return 9;
+else
+			return 5;
 }
 
 double CarADVISE::ReflashGatewayChipFailureStep::Weight() {
@@ -619,7 +622,10 @@ void CarADVISE::ReflashGatewayChipFailureStep::executeEffects() {
 }
 
 double CarADVISE::ReflashGatewayChipFailureStep::getCost() {
-return 9;
+if(ChipFlashingSkill->Mark() < FlashingSkillExpertise)
+			return 90;
+else
+			return 50;
 }
 
 double CarADVISE::ReflashGatewayChipFailureStep::getOutcomeProbability() {
@@ -665,7 +671,10 @@ bool CarADVISE::ReflashGatewayChipSuccessStep::Enabled() {
 }
 
 double CarADVISE::ReflashGatewayChipSuccessStep::timeDistributionParameter0() {
-return 9;
+if(ChipFlashingSkill->Mark() < FlashingSkillExpertise)
+			return 9;
+else
+			return 5;
 }
 
 double CarADVISE::ReflashGatewayChipSuccessStep::Weight() {
@@ -703,7 +712,10 @@ CompromisedGatewayAccess->Mark() = true;
 }
 
 double CarADVISE::ReflashGatewayChipSuccessStep::getCost() {
-return 9;
+if(ChipFlashingSkill->Mark() < FlashingSkillExpertise)
+			return 90;
+else
+			return 50;
 }
 
 double CarADVISE::ReflashGatewayChipSuccessStep::getOutcomeProbability() {
@@ -828,7 +840,7 @@ bool CarADVISE::ExtractDataViaCANBusFailureStep::Enabled() {
 }
 
 double CarADVISE::ExtractDataViaCANBusFailureStep::timeDistributionParameter0() {
-return CANExtractionTime;
+return 2;
 }
 
 double CarADVISE::ExtractDataViaCANBusFailureStep::Weight() {
@@ -866,7 +878,7 @@ void CarADVISE::ExtractDataViaCANBusFailureStep::executeEffects() {
 }
 
 double CarADVISE::ExtractDataViaCANBusFailureStep::getCost() {
-return CANExtractionCost;
+return 20;
 }
 
 double CarADVISE::ExtractDataViaCANBusFailureStep::getOutcomeProbability() {
@@ -911,7 +923,7 @@ bool CarADVISE::ExtractDataViaCANBusSuccessStep::Enabled() {
 }
 
 double CarADVISE::ExtractDataViaCANBusSuccessStep::timeDistributionParameter0() {
-return CANExtractionTime;
+return 2;
 }
 
 double CarADVISE::ExtractDataViaCANBusSuccessStep::Weight() {
@@ -949,7 +961,7 @@ StealPrivateData->Mark() = 1;
 }
 
 double CarADVISE::ExtractDataViaCANBusSuccessStep::getCost() {
-return CANExtractionCost;
+return 20;
 }
 
 double CarADVISE::ExtractDataViaCANBusSuccessStep::getOutcomeProbability() {
@@ -995,7 +1007,7 @@ bool CarADVISE::SendV2XMaliciousMessagesFailureStep::Enabled() {
 }
 
 double CarADVISE::SendV2XMaliciousMessagesFailureStep::timeDistributionParameter0() {
-return maliciousV2XMessagesTime;
+return 3;
 }
 
 double CarADVISE::SendV2XMaliciousMessagesFailureStep::Weight() {
@@ -1033,7 +1045,7 @@ void CarADVISE::SendV2XMaliciousMessagesFailureStep::executeEffects() {
 }
 
 double CarADVISE::SendV2XMaliciousMessagesFailureStep::getCost() {
-return maliciousV2XMessagesCost;
+return 20;
 }
 
 double CarADVISE::SendV2XMaliciousMessagesFailureStep::getOutcomeProbability() {
@@ -1079,7 +1091,7 @@ bool CarADVISE::SendV2XMaliciousMessagesSuccessStep::Enabled() {
 }
 
 double CarADVISE::SendV2XMaliciousMessagesSuccessStep::timeDistributionParameter0() {
-return maliciousV2XMessagesTime;
+return 3;
 }
 
 double CarADVISE::SendV2XMaliciousMessagesSuccessStep::Weight() {
@@ -1117,7 +1129,7 @@ CompromisedGatewayAccess->Mark() = true;
 }
 
 double CarADVISE::SendV2XMaliciousMessagesSuccessStep::getCost() {
-return maliciousV2XMessagesCost;
+return 20;
 }
 
 double CarADVISE::SendV2XMaliciousMessagesSuccessStep::getOutcomeProbability() {
@@ -1201,7 +1213,7 @@ void CarADVISE::InjectTamperedBinaryFailureStep::executeEffects() {
 }
 
 double CarADVISE::InjectTamperedBinaryFailureStep::getCost() {
-return 7;
+return 70;
 }
 
 double CarADVISE::InjectTamperedBinaryFailureStep::getOutcomeProbability() {
@@ -1285,7 +1297,7 @@ InternalRemoteAccess->Mark() = true;
 }
 
 double CarADVISE::InjectTamperedBinarySuccessStep::getCost() {
-return 7;
+return 70;
 }
 
 double CarADVISE::InjectTamperedBinarySuccessStep::getOutcomeProbability() {
@@ -1330,7 +1342,7 @@ bool CarADVISE::InjectMaliciousCANMessagesFailureStep::Enabled() {
 }
 
 double CarADVISE::InjectMaliciousCANMessagesFailureStep::timeDistributionParameter0() {
-return maliciousCANMessagesTime;
+return 2;
 }
 
 double CarADVISE::InjectMaliciousCANMessagesFailureStep::Weight() {
@@ -1368,7 +1380,7 @@ void CarADVISE::InjectMaliciousCANMessagesFailureStep::executeEffects() {
 }
 
 double CarADVISE::InjectMaliciousCANMessagesFailureStep::getCost() {
-return maliciousCANMessagesCost;
+return 10;
 }
 
 double CarADVISE::InjectMaliciousCANMessagesFailureStep::getOutcomeProbability() {
@@ -1413,7 +1425,7 @@ bool CarADVISE::InjectMaliciousCANMessagesSuccessStep::Enabled() {
 }
 
 double CarADVISE::InjectMaliciousCANMessagesSuccessStep::timeDistributionParameter0() {
-return maliciousCANMessagesTime;
+return 2;
 }
 
 double CarADVISE::InjectMaliciousCANMessagesSuccessStep::Weight() {
@@ -1451,7 +1463,7 @@ InternalCANAccess->Mark() = true;
 }
 
 double CarADVISE::InjectMaliciousCANMessagesSuccessStep::getCost() {
-return maliciousCANMessagesCost;
+return 10;
 }
 
 double CarADVISE::InjectMaliciousCANMessagesSuccessStep::getOutcomeProbability() {
@@ -1534,7 +1546,7 @@ void CarADVISE::ExtractDataRemotelyFailureStep::executeEffects() {
 }
 
 double CarADVISE::ExtractDataRemotelyFailureStep::getCost() {
-return 3;
+return 30;
 }
 
 double CarADVISE::ExtractDataRemotelyFailureStep::getOutcomeProbability() {
@@ -1617,7 +1629,7 @@ StealPrivateData->Mark() = true;
 }
 
 double CarADVISE::ExtractDataRemotelySuccessStep::getCost() {
-return 3;
+return 30;
 }
 
 double CarADVISE::ExtractDataRemotelySuccessStep::getOutcomeProbability() {
@@ -1667,7 +1679,7 @@ return 5;
 }
 
 double CarADVISE::ImpersonateOEMFailureStep::Weight() {
-return 0.25;
+return 0.2;
 }
 
 bool CarADVISE::ImpersonateOEMFailureStep::ReactivationPredicate() {
@@ -1701,11 +1713,11 @@ void CarADVISE::ImpersonateOEMFailureStep::executeEffects() {
 }
 
 double CarADVISE::ImpersonateOEMFailureStep::getCost() {
-return 5;
+return 0;
 }
 
 double CarADVISE::ImpersonateOEMFailureStep::getOutcomeProbability() {
-return 0.25;
+return 0.2;
 }
 
 double CarADVISE::ImpersonateOEMFailureStep::getDetection() {
@@ -1751,7 +1763,7 @@ return 5;
 }
 
 double CarADVISE::ImpersonateOEMSuccessStep::Weight() {
-return 0.75;
+return 0.8;
 }
 
 bool CarADVISE::ImpersonateOEMSuccessStep::ReactivationPredicate() {
@@ -1785,11 +1797,11 @@ InternalRemoteAccess->Mark() = true;
 }
 
 double CarADVISE::ImpersonateOEMSuccessStep::getCost() {
-return 5;
+return 0;
 }
 
 double CarADVISE::ImpersonateOEMSuccessStep::getOutcomeProbability() {
-return 0.75;
+return 0.8;
 }
 
 double CarADVISE::ImpersonateOEMSuccessStep::getDetection() {

@@ -51,7 +51,7 @@
       </value>
     </stepElements>
     <stepElements key="Send V2X Malicious Messages">
-      <value name="Send V2X Malicious Messages" codename="SendV2XMaliciousMessages" xpos="111" ypos="175" sourceArcs="//@aeg/@arcElements.8" targetArcs="//@aeg/@arcElements.4 //@aeg/@arcElements.5 //@aeg/@arcElements.6" attackExecutionGraph="//@aeg" width="150" preconditions="return CompromisedGatewayAccess->Mark() == 0 &amp;&amp; ProximityNetworkAccess->Mark() &amp;&amp; V2xProtocolKnowledge->Mark() &amp;&amp; V2XPacketCraftingSkill->Mark() >= v2XPacketCraftingSkillThreshold;" cost="return maliciousV2XMessagesCost;">
+      <value name="Send V2X Malicious Messages" codename="SendV2XMaliciousMessages" xpos="111" ypos="175" sourceArcs="//@aeg/@arcElements.8" targetArcs="//@aeg/@arcElements.4 //@aeg/@arcElements.5 //@aeg/@arcElements.6" attackExecutionGraph="//@aeg" width="150" preconditions="return CompromisedGatewayAccess->Mark() == 0 &amp;&amp; ProximityNetworkAccess->Mark() &amp;&amp; V2xProtocolKnowledge->Mark() &amp;&amp; V2XPacketCraftingSkill->Mark() >= v2XPacketCraftingSkillThreshold;" cost="return 20;">
         <outcomes key="Success">
           <value name="Success" probability="return 0.55;" detection="return 0.5;" effects="CompromisedGatewayAccess->Mark() = true;"/>
         </outcomes>
@@ -59,12 +59,12 @@
           <value name="Failure" probability="return 0.45;" detection="return 0.4;" effects=""/>
         </outcomes>
         <timing distributionType="Deterministic">
-          <parameters>return maliciousV2XMessagesTime;</parameters>
+          <parameters>return 3;</parameters>
         </timing>
       </value>
     </stepElements>
     <stepElements key="Inject Malicious CAN Messages">
-      <value name="Inject Malicious CAN Messages" codename="InjectMaliciousCANMessages" xpos="237" ypos="453" sourceArcs="//@aeg/@arcElements.11" targetArcs="//@aeg/@arcElements.7 //@aeg/@arcElements.10" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalCANAccess->Mark() == 0 &amp;&amp; CompromisedGatewayAccess->Mark() &amp;&amp;SpoofingSkill->Mark() >= CANSpoofingSkillThreshold;" cost="return maliciousCANMessagesCost;">
+      <value name="Inject Malicious CAN Messages" codename="InjectMaliciousCANMessages" xpos="237" ypos="453" sourceArcs="//@aeg/@arcElements.11" targetArcs="//@aeg/@arcElements.7 //@aeg/@arcElements.10" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalCANAccess->Mark() == 0 &amp;&amp; CompromisedGatewayAccess->Mark() &amp;&amp;SpoofingSkill->Mark() >= CANSpoofingSkillThreshold;" cost="return 10;">
         <outcomes key="Failure">
           <value name="Failure" probability="return 0.2;" detection="return 0.2;" effects=""/>
         </outcomes>
@@ -72,12 +72,12 @@
           <value name="Success" probability="return 0.8;" detection="return 0.2;" effects="InternalCANAccess->Mark() = true;"/>
         </outcomes>
         <timing distributionType="Deterministic">
-          <parameters>return maliciousCANMessagesTime;</parameters>
+          <parameters>return 2;</parameters>
         </timing>
       </value>
     </stepElements>
     <stepElements key="Extract Data Via CAN Bus">
-      <value name="Extract Data Via CAN Bus" codename="ExtractDataViaCANBus" xpos="335" ypos="687" sourceArcs="//@aeg/@arcElements.13" targetArcs="//@aeg/@arcElements.12 //@aeg/@arcElements.14" attackExecutionGraph="//@aeg" width="150" preconditions="return StealPrivateData->Mark() == 0 &amp;&amp; InternalCANAccess->Mark() &amp;&amp; DataExtractionSkill->Mark() >= CANExtractionSkillThreshold; " cost="return CANExtractionCost;">
+      <value name="Extract Data Via CAN Bus" codename="ExtractDataViaCANBus" xpos="335" ypos="687" sourceArcs="//@aeg/@arcElements.13" targetArcs="//@aeg/@arcElements.12 //@aeg/@arcElements.14" attackExecutionGraph="//@aeg" width="150" preconditions="return StealPrivateData->Mark() == 0 &amp;&amp; InternalCANAccess->Mark() &amp;&amp; DataExtractionSkill->Mark() >= CANExtractionSkillThreshold; " cost="return 20;">
         <outcomes key="Success">
           <value name="Success" probability="return 0.75;" detection="return 0.15;" effects="StealPrivateData->Mark() = 1;"/>
         </outcomes>
@@ -85,17 +85,17 @@
           <value name="Failure" probability="return 0.15;" detection="return 0.15;" effects=""/>
         </outcomes>
         <timing distributionType="Deterministic">
-          <parameters>return CANExtractionTime;</parameters>
+          <parameters>return 2;</parameters>
         </timing>
       </value>
     </stepElements>
     <stepElements key="Impersonate OEM">
-      <value name="Impersonate OEM" codename="ImpersonateOEM" xpos="784" ypos="243" sourceArcs="//@aeg/@arcElements.22" targetArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.20 //@aeg/@arcElements.24" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalRemoteAccess->Mark() == 0 &amp;&amp; CarModelKnowledge->Mark() &amp;&amp; RemoteNetworkAccess->Mark() &amp;&amp; SpoofingSkill->Mark() >= OEMSpoofingSkillThreshold;" cost="return 5;">
+      <value name="Impersonate OEM" codename="ImpersonateOEM" xpos="784" ypos="243" sourceArcs="//@aeg/@arcElements.22" targetArcs="//@aeg/@arcElements.0 //@aeg/@arcElements.20 //@aeg/@arcElements.24" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalRemoteAccess->Mark() == 0 &amp;&amp; CarModelKnowledge->Mark() &amp;&amp; RemoteNetworkAccess->Mark() &amp;&amp; SpoofingSkill->Mark() >= OEMSpoofingSkillThreshold;" cost="return 0;">
         <outcomes key="Outcome 1">
-          <value name="Success" probability="return 0.75;" detection="return 0.4;" effects="InternalRemoteAccess->Mark() = true;"/>
+          <value name="Success" probability="return 0.8;" detection="return 0.4;" effects="InternalRemoteAccess->Mark() = true;"/>
         </outcomes>
         <outcomes key="Failure">
-          <value name="Failure" probability="return 0.25;" detection="return 0.6;" effects=""/>
+          <value name="Failure" probability="return 0.2;" detection="return 0.6;" effects=""/>
         </outcomes>
         <timing distributionType="Deterministic">
           <parameters>return 5;</parameters>
@@ -103,7 +103,7 @@
       </value>
     </stepElements>
     <stepElements key="Inject Tampered Binary">
-      <value name="Inject Tampered Binary" codename="InjectTamperedBinary" xpos="1014" ypos="274" sourceArcs="//@aeg/@arcElements.23" targetArcs="//@aeg/@arcElements.1 //@aeg/@arcElements.2 //@aeg/@arcElements.3" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalRemoteAccess->Mark() == 0 &amp;&amp; MessageFormatKnowledge->Mark() &amp;&amp; RemoteNetworkAccess->Mark() &amp;&amp; InjectionSkill->Mark() >= injectionSkillThreshold;" cost="return 7;">
+      <value name="Inject Tampered Binary" codename="InjectTamperedBinary" xpos="1014" ypos="274" sourceArcs="//@aeg/@arcElements.23" targetArcs="//@aeg/@arcElements.1 //@aeg/@arcElements.2 //@aeg/@arcElements.3" attackExecutionGraph="//@aeg" width="150" preconditions="return InternalRemoteAccess->Mark() == 0 &amp;&amp; MessageFormatKnowledge->Mark() &amp;&amp; RemoteNetworkAccess->Mark() &amp;&amp; InjectionSkill->Mark() >= injectionSkillThreshold;" cost="return 70;">
         <outcomes key="Outcome 1">
           <value name="Success" probability="return 0.8;" detection="return 0.2;" effects="InternalRemoteAccess->Mark() = true;"/>
         </outcomes>
@@ -116,7 +116,7 @@
       </value>
     </stepElements>
     <stepElements key="Extract Data Remotely">
-      <value name="Extract Data Remotely" codename="ExtractDataRemotely" xpos="648" ypos="675" sourceArcs="//@aeg/@arcElements.16" targetArcs="//@aeg/@arcElements.15 //@aeg/@arcElements.17" attackExecutionGraph="//@aeg" width="150" preconditions="return StealPrivateData->Mark() == 0 &amp;&amp; InternalRemoteAccess->Mark() &amp;&amp; DataExtractionSkill->Mark() >= remoteExtractionSkillThreshold;" cost="return 3;">
+      <value name="Extract Data Remotely" codename="ExtractDataRemotely" xpos="648" ypos="675" sourceArcs="//@aeg/@arcElements.16" targetArcs="//@aeg/@arcElements.15 //@aeg/@arcElements.17" attackExecutionGraph="//@aeg" width="150" preconditions="return StealPrivateData->Mark() == 0 &amp;&amp; InternalRemoteAccess->Mark() &amp;&amp; DataExtractionSkill->Mark() >= remoteExtractionSkillThreshold;" cost="return 30;">
         <outcomes key="Outcome 1">
           <value name="Success" probability="return 0.75;" detection="return 0.45;" effects="StealPrivateData->Mark() = true;"/>
         </outcomes>
@@ -129,7 +129,7 @@
       </value>
     </stepElements>
     <stepElements key="Reflash Gateway Chip">
-      <value name="Reflash Gateway Chip" codename="ReflashGatewayChip" xpos="526" ypos="399" sourceArcs="//@aeg/@arcElements.9" targetArcs="//@aeg/@arcElements.18 //@aeg/@arcElements.19 //@aeg/@arcElements.21" attackExecutionGraph="//@aeg" width="150" preconditions="return CompromisedGatewayAccess->Mark() == 0 &amp;&amp; InternalRemoteAccess->Mark() &amp;&amp; CarModelKnowledge->Mark() &amp;&amp; ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold;" cost="return 9;">
+      <value name="Reflash Gateway Chip" codename="ReflashGatewayChip" xpos="526" ypos="399" sourceArcs="//@aeg/@arcElements.9" targetArcs="//@aeg/@arcElements.18 //@aeg/@arcElements.19 //@aeg/@arcElements.21" attackExecutionGraph="//@aeg" width="150" preconditions="return CompromisedGatewayAccess->Mark() == 0 &amp;&amp; InternalRemoteAccess->Mark() &amp;&amp; CarModelKnowledge->Mark() &amp;&amp; ChipFlashingSkill->Mark() >= chipFlashingSkillThreshold;" cost="if(ChipFlashingSkill->Mark() &lt; FlashingSkillExpertise)&#xA;&#x9;&#x9;&#x9;return 90;&#xA;else&#xA;&#x9;&#x9;&#x9;return 50;">
         <outcomes key="Outcome 1">
           <value name="Success" probability="return 0.75;" detection="return 0.1;" effects="CompromisedGatewayAccess->Mark() = true;"/>
         </outcomes>
@@ -137,7 +137,10 @@
           <value name="Failure" probability="return 0.25;" detection="return 0.2;" effects=""/>
         </outcomes>
         <timing distributionType="Deterministic">
-          <parameters>return 9;</parameters>
+          <parameters>if(ChipFlashingSkill->Mark() &lt; FlashingSkillExpertise)
+			return 9;
+else
+			return 5;</parameters>
         </timing>
       </value>
     </stepElements>
@@ -170,7 +173,7 @@
     <arcElements sourceName="Step 14" targetName="Internal Remote Access" sourceType="Step"/>
     <arcElements sourceName="Spoofing Skill" targetName="Step 13" sourceType="Skill" targetType="Step"/>
   </aeg>
-  <adversary name="Adversary" codename="Adversary" horizon="5">
+  <adversary name="Adversary" codename="Adversary" horizon="4" costSW="0.4" payoffSW="0.5">
     <accessInit key="Proximity Network Access" value="hasProximityAccess"/>
     <accessInit key="Remote Network Access" value="hasRemoteNetworkAccess"/>
     <goalInit key="Steal Private Data" value="0"/>
