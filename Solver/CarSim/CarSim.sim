@@ -22,10 +22,10 @@
 			<long id="ReportFrequency">1000</long>
 			<byte id="BuildType">1</byte>
 			<string id="BuildArch">64-bit</string>
-			<byte id="TraceLevel">2</byte>
+			<byte id="TraceLevel">1</byte>
 			<string id="Runname">Results</string>
 			<int id="DisplayUpdateFrequency">1000</int>
-			<boolean id="MaximizeProcessorUsage">true</boolean>
+			<boolean id="MaximizeProcessorUsage">false</boolean>
 			<int id="ProcessorsPerExperiment">1</int>
 			<int id="NumMachines">1</int>
 			<string id="MachineName">student-VirtualBox</string>
